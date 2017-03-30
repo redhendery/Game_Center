@@ -1,2 +1,19 @@
-<h1>Schedule#index</h1>
-<p>Find me in app/views/schedule/index.html.erb</p>
+<h1>Game Listing</h1>
+
+<table>
+  <tr>
+    <th>Home</th>
+    <th>Away</th>
+    <th>Venue</th>
+    <th>League Game</th>
+    <th>Date</th>
+  </tr>
+
+  <% @schedules.each do |schedule| %>
+    <td><%= schedule.home %></td>
+    <td><%= schedule.away %></td>
+    <td><%= schedule.venue %></td>
+    <td><%= schedule.leagueGame %></td>
+    <td><%= schedule.date %></td>
+  <% end %>
+</table>
