@@ -1,19 +1,33 @@
-<h1>Game Listing</h1>
-
-<table>
-  <tr>
-    <th>Home</th>
-    <th>Away</th>
-    <th>Venue</th>
-    <th>League Game</th>
-    <th>Date</th>
-  </tr>
-
-  <% @schedules.each do |schedule| %>
-    <td><%= schedule.home %></td>
-    <td><%= schedule.away %></td>
-    <td><%= schedule.venue %></td>
-    <td><%= schedule.leagueGame %></td>
-    <td><%= schedule.date %></td>
-  <% end %>
-</table>
+<div class="container-fluid">
+  <div class="well">
+    <ul class="nav nav-pills nav-justified">
+      <li><%= link_to 'All Games', schedules_path %></li>
+      <li><%= link_to 'Botany Swarm', schedules_path %></li>
+      <li><%= link_to 'Canterbury Red Devils', schedules_path %></li>
+      <li><%= link_to 'Dunedin Thunder', schedules_path %></li>
+      <li><%= link_to 'Skycity Stampede', schedules_path %></li>
+      <li><%= link_to 'West Auckland Admirals', schedules_path %></li>
+    </ul>
+    <% @schedules.each do |schedule| %>
+      <div class="col-md-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <h4 class="text-center"><%= schedule.leagueGame %> - <%= schedule.home %> v <%= schedule.away %></h4>
+            </div>
+            <div class="panel-body">
+              <span class="pull-left"><img src="<%= schedule.homeLogo %>" alt="<%= schedule.homeLogo %>"></span>
+              <span class="text-center">Details of upcoming game</span>
+              <span><img class="pull-right" src="<%= schedule.awayLogo %>" alt="<%= schedule.awayLogo %>"></span>
+            </div>
+            <div class="panel-footer">
+              <span class="pull-left"><%= schedule.venue %></span>
+              <span class="text-center">Tickets</span>
+              <span class="pull-right"><%= schedule.date %></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
