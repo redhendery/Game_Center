@@ -4,16 +4,16 @@ class ScheduleController < ApplicationController
     @schedules = Schedule.all
   end
 
-  # def show
-  #   @schedule = Schedule.find(params[:id])
-  # end
+  def show
+    @schedule = Schedule.find(params[:id])
+  end
 
   def swarm
     @swarm = Schedule.find([3, 4, 7, 8, 13, 14, 19, 20, 27, 28, 29, 30, 35, 36, 39, 40])
   end
 
-  def red_devils
-    @red_devils =  Schedule.find([1, 2, 7, 8, 11, 12, 15, 16, 23, 24, 21, 32, 35, 36, 37, 38])
+  def reddevils
+    @reddevils =  Schedule.find([1, 2, 7, 8, 11, 12, 15, 16, 23, 24, 21, 32, 35, 36, 37, 38])
   end
 
   def thunder
