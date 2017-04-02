@@ -1,6 +1,15 @@
 Rails.application.routes.draw do
-  get 'schedule/index'
+  # get 'schedule/index'
+
+  resources :schedules
 
   root 'schedule#index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+# Schedule routes
+  get 'schedule/swarm'
+  get 'schedule/reddevils'
+  get 'schedule/thunder'
+  get 'schedule/stampede'
+  get 'schedule/admirals'
+
 end
