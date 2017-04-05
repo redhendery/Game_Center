@@ -5,7 +5,7 @@ class ScheduleController < ApplicationController
   end
 
   def show
-    @schedule = Schedule.find(params[:id])
+    @schedules = Schedule.find(params[:id])
   end
 
   def swarm
@@ -13,7 +13,7 @@ class ScheduleController < ApplicationController
   end
 
   def reddevils
-    @reddevils =  Schedule.find([1, 2, 7, 8, 11, 12, 15, 16, 23, 24, 21, 32, 35, 36, 37, 38])
+    @reddevils = Schedule.find([1, 2, 7, 8, 11, 12, 15, 16, 23, 24, 21, 32, 35, 36, 37, 38])
   end
 
   def thunder
