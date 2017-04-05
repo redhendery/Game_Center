@@ -9,7 +9,7 @@
       <li><%= link_to 'West Auckland Admirals', schedule_admirals_path %></li>
     </ul>
     <% @swarm.each do |schedule| %>
-      <div class="col-md-6">
+      <div class="col-xs-6">
         <div class="panel panel-default">
           <div class="panel-heading">
             <div class="panel-title">
@@ -17,7 +17,7 @@
             </div>
             <div class="panel-body">
               <span class="pull-left"><img src="<%= schedule.homeLogo %>" alt="<%= schedule.homeLogo %>"></span>
-              <span class="text-center">Details of upcoming game</span>
+              <span class="text-center">Details of upcoming game <%= link_to 'Game Deets', schedule_path(schedule) %></span>
               <span><img class="pull-right" src="<%= schedule.awayLogo %>" alt="<%= schedule.awayLogo %>"></span>
             </div>
             <div class="panel-footer">
