@@ -12,6 +12,26 @@ class PlayersController < ApplicationController
   def show
   end
 
+  def swarm
+    @swarm = Player.where(team: 'Botany Swarm')
+  end
+
+  def reddevils
+    @reddevils = Player.where(team: 'Canterbury Red Devils')
+  end
+
+  def thunder
+    @thunder = Player.where(team: 'Dunedin Thunder')
+  end
+
+  def stampede
+    @stampede = Player.where(team: 'Skycity Stampede')
+  end
+
+  def admirals
+    @admirals = Player.where(team: 'West Auckland Admirals')
+  end
+
   # GET /players/new
   def new
     @player = Player.new

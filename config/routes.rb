@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+
+  get 'players/swarm'
+  get 'players/reddevils'
+  get 'players/thunder'
+  get 'players/stampede'
+  get 'players/admirals'
+
   resources :players
   # get 'schedule/index'
 
