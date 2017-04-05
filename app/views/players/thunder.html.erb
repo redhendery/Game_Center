@@ -9,46 +9,46 @@
       <li><%= link_to 'West Auckland Admirals', players_admirals_path %></li>
     </ul>
   </div>
-    <%= @thunder.each do |player| %>
-      <div class="col-xs-4">
-        <div class="panel panel-info">
-          <div class="container-fluid panel-heading">
-            <div class="row">
-              <div class="col-xs-10">
-                <h4 class="list-group-item-heading"><%= player.name %></h4>
-                <p class="list-group-item-text">Shoots: <%= player.shoots %></p>
-              </div>
-              <div class="col-xs-2">
-                <h4 class="list-group-item-heading pull-right">#<%= player.number %></h4>
-                <p class="list-group-item-text pull-right"><%= player.position %></p>
-              </div>
+  <% @thunder.each do |player| %>
+    <div class="col-xs-4">
+      <div class="panel panel-info">
+        <div class="container-fluid panel-heading">
+          <div class="row">
+            <div class="col-xs-10">
+              <h4 class="list-group-item-heading"><%= player.name %></h4>
+              <p class="list-group-item-text">Shoots: <%= player.shoots %></p>
             </div>
-          </div>
-          <div class="panel-body">
-            <div class="table-responsive">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th class="text-center col-xs-2">GP</th>
-                    <th class="text-center col-xs-2">G</th>
-                    <th class="text-center col-xs-2">A</th>
-                    <th class="text-center col-xs-2">P</th>
-                    <th class="text-center col-xs-2">PIM</th>
-                    <th class="text-center col-xs-2">+/-</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <td class="text-center col-xs-2"><%= player.gp %></td>
-                  <td class="text-center col-xs-2"><%= player.goals %></td>
-                  <td class="text-center col-xs-2"><%= player.assists %></td>
-                  <td class="text-center col-xs-2"><%= player.points %></td>
-                  <td class="text-center col-xs-2"><%= player.pim %></td>
-                  <td class="text-center col-xs-2"><%= player.plusMinus %></td>
-                </tbody>
-              </table>
+            <div class="col-xs-2">
+              <h4 class="list-group-item-heading pull-right">#<%= player.number %></h4>
+              <p class="list-group-item-text pull-right"><%= player.position %></p>
             </div>
           </div>
         </div>
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="text-center col-xs-2">GP</th>
+                  <th class="text-center col-xs-2">G</th>
+                  <th class="text-center col-xs-2">A</th>
+                  <th class="text-center col-xs-2">P</th>
+                  <th class="text-center col-xs-2">PIM</th>
+                  <th class="text-center col-xs-2">+/-</th>
+                </tr>
+              </thead>
+              <tbody>
+                <td class="text-center col-xs-2"><%= player.gp %></td>
+                <td class="text-center col-xs-2"><%= player.goals %></td>
+                <td class="text-center col-xs-2"><%= player.assists %></td>
+                <td class="text-center col-xs-2"><%= player.points %></td>
+                <td class="text-center col-xs-2"><%= player.pim %></td>
+                <td class="text-center col-xs-2"><%= player.plusMinus %></td>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
-    <% end %>
+    </div>
+  <% end %>
 </div>
