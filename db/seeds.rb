@@ -608,7 +608,7 @@ players = Player.create([{
 }, {
 	"name": "Michael Coleman",
 	"team": "Canterbury Red Devils",
-	"shoots": "Left",
+	"catches": "Left",
 	"position": "GK",
 	"number": 1,
 	"gp": 9,
@@ -617,7 +617,7 @@ players = Player.create([{
 }, {
 	"name": "Steven Coull",
 	"team": "Canterbury Red Devils",
-	"shoots": "Left",
+	"catches": "Left",
 	"position": "GK",
 	"number": 35,
 	"gp": 2,
@@ -626,7 +626,7 @@ players = Player.create([{
 }, {
 	"name": "Richard Bigsby",
 	"team": "Canterbury Red Devils",
-	"shoots": "Left",
+	"catches": "Left",
 	"position": "GK",
 	"number": 0,
 	"gp": 0,
