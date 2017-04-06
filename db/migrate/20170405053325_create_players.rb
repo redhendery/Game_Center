@@ -4,6 +4,7 @@ class CreatePlayers < ActiveRecord::Migration[5.0]
       t.string :name
       t.string :team
       t.string :shoots
+      t.string :catches
       t.string :position
       t.integer :number
       t.integer :gp
@@ -12,6 +13,8 @@ class CreatePlayers < ActiveRecord::Migration[5.0]
       t.integer :points
       t.integer :pim
       t.integer :plusMinus
+      t.integer :gaa
+      t.integer :svs
 
       t.timestamps
     end
