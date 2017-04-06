@@ -17,13 +17,12 @@
             <h4 class="text-center"><%= schedule.leagueGame %> - <%= schedule.home %> v <%= schedule.away %></h4>
           </div>
           <div class="panel-body">
-            <span class="pull-left"><img src="<%= schedule.homeLogo %>" alt="<%= schedule.homeLogo %>"></span>
-            <span class="text-center">Details of upcoming game <%= link_to 'Game Deets', schedule_path(schedule) %></span>
-            <span><img class="pull-right" src="<%= schedule.awayLogo %>" alt="<%= schedule.awayLogo %>"></span>
+            <div class="col-xs-3"><img src="<%= schedule.homeLogo %>" alt="<%= schedule.homeLogo %>"></div>
+            <div class="col-xs-6 text-center"><%= link_to 'Details of upcoming game', schedule_path(schedule) %></div>
+            <div class="col-xs-3"><img class="pull-right" src="<%= schedule.awayLogo %>" alt="<%= schedule.awayLogo %>"></div>
           </div>
-          <div class="panel-footer">
-            <span class="pull-left"><%= schedule.venue %></span>
-            <span class="text-center">Tickets</span>
+          <div class="panel-footer justified">
+            <span><%= schedule.venue %></span>
             <span class="pull-right"><%= schedule.date %></span>
           </div>
         </div>
