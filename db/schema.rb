@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20170405053325) do
     t.integer  "points"
     t.integer  "pim"
     t.integer  "plusMinus"
-    t.integer  "gaa"
+    t.decimal  "gaa"
     t.integer  "svs"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
