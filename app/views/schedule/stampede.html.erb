@@ -8,26 +8,26 @@
       <li><%= link_to 'Skycity Stampede', schedule_stampede_path %></li>
       <li><%= link_to 'West Auckland Admirals', schedule_admirals_path %></li>
     </ul>
-    <% @stampede.each do |schedule| %>
-      <div class="col-xs-6">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class="panel-title">
-              <h4 class="text-center"><%= schedule.leagueGame %> - <%= schedule.home %> v <%= schedule.away %></h4>
-            </div>
-            <div class="panel-body">
-              <span class="pull-left"><img src="<%= schedule.homeLogo %>" alt="<%= schedule.homeLogo %>"></span>
-              <span class="text-center">Details of upcoming game <%= link_to 'Game Deets', schedule_path(schedule) %></span>
-              <span><img class="pull-right" src="<%= schedule.awayLogo %>" alt="<%= schedule.awayLogo %>"></span>
-            </div>
-            <div class="panel-footer">
-              <span class="pull-left"><%= schedule.venue %></span>
-              <span class="text-center">Tickets</span>
-              <span class="pull-right"><%= schedule.date %></span>
-            </div>
+  </div>
+  <% @stampede.each do |schedule| %>
+    <div class="col-xs-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">
+            <h4 class="text-center"><%= schedule.leagueGame %> - <%= schedule.home %> v <%= schedule.away %></h4>
+          </div>
+          <div class="panel-body">
+            <span class="pull-left"><img src="<%= schedule.homeLogo %>" alt="<%= schedule.homeLogo %>"></span>
+            <span class="text-center">Details of upcoming game <%= link_to 'Game Deets', schedule_path(schedule) %></span>
+            <span><img class="pull-right" src="<%= schedule.awayLogo %>" alt="<%= schedule.awayLogo %>"></span>
+          </div>
+          <div class="panel-footer">
+            <span class="pull-left"><%= schedule.venue %></span>
+            <span class="text-center">Tickets</span>
+            <span class="pull-right"><%= schedule.date %></span>
           </div>
         </div>
       </div>
-    <% end %>
-  </div>
+    </div>
+  <% end %>
 </div>
