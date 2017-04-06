@@ -10,14 +10,14 @@
     </ul>
   </div>
   <div class="col-xs-9">
-     <% @player_skaters.each do |skater| %>
+    <% @stampede_skaters.each do |skater| %>
       <div class="col-xs-4">
         <div class="panel panel-info">
           <div class="container-fluid panel-heading">
             <div class="row">
               <div class="col-xs-10">
                 <h4 class="list-group-item-heading"><%= skater.name %></h4>
-                <p class="list-group-item-text"><%= skater.team %></p>
+                <p class="list-group-item-text">Shoots: <%= skater.shoots %></p>
               </div>
               <div class="col-xs-2">
                 <h4 class="list-group-item-heading pull-right">#<%= skater.number %></h4>
@@ -54,14 +54,14 @@
     <% end %>
   </div>
   <div class="col-xs-3">
-    <% @player_gk.each do |gk| %>
+    <% @stampede_gk.each do |gk| %>
       <div class="col-xs-12">
         <div class="panel panel-info">
           <div class="container-fluid panel-heading">
             <div class="row">
               <div class="col-xs-10">
                 <h4 class="list-group-item-heading"><%= gk.name %></h4>
-                <p class="list-group-item-text"><%= gk.team %></p>
+                <p class="list-group-item-text">Catches: <%= gk.catches %></p>
               </div>
               <div class="col-xs-2">
                 <h4 class="list-group-item-heading pull-right">#<%= gk.number %></h4>

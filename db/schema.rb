@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20170405053325) do
     t.string   "name"
     t.string   "team"
     t.string   "shoots"
+    t.string   "catches"
     t.string   "position"
     t.integer  "number"
     t.integer  "gp"
@@ -24,6 +25,8 @@ ActiveRecord::Schema.define(version: 20170405053325) do
     t.integer  "points"
     t.integer  "pim"
     t.integer  "plusMinus"
+    t.decimal  "gaa"
+    t.integer  "svs"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
