@@ -340,7 +340,8 @@ players = Player.create([{
   "assists": 6,
   "points": 18,
   "pim": 12,
-  "plusMinus": 7
+  "plusMinus": 7,
+	"abr": "WAA"
 }, {
   "name": "Andy Hart",
   "team": "West Auckland Admirals",
@@ -352,7 +353,8 @@ players = Player.create([{
   "assists": 20,
   "points": 24,
   "pim": 16,
-  "plusMinus": 11
+  "plusMinus": 11,
+	"abr": "WAA"
 }, {
   "name": "Justin Daigle",
   "team": "West Auckland Admirals",
@@ -364,7 +366,8 @@ players = Player.create([{
   "assists": 2,
   "points": 3,
   "pim": 30,
-  "plusMinus": 0
+  "plusMinus": 0,
+	"abr": "WAA"
 }, {
   "name": "Blake Jackson",
   "team": "West Auckland Admirals",
@@ -376,7 +379,8 @@ players = Player.create([{
   "assists": 8,
   "points": 12,
   "pim": 18,
-  "plusMinus": 9
+  "plusMinus": 9,
+	"abr": "WAA"
 }, {
 	"name": "Chris Eaden",
 	"team": "Canterbury Red Devils",
@@ -388,7 +392,8 @@ players = Player.create([{
 	"assists": 14,
 	"points": 28,
 	"pim": 10,
-	"plusMinus": 9
+	"plusMinus": 9,
+	"abr": "CRD"
 }, {
 	"name": "Brad Apps",
 	"team": "Canterbury Red Devils",
@@ -400,7 +405,8 @@ players = Player.create([{
 	"assists": 4,
 	"points": 8,
 	"pim": 8,
-	"plusMinus": -9
+	"plusMinus": -9,
+	"abr": "CRD"
 }, {
 	"name": "Alex Ashwell",
 	"team": "Canterbury Red Devils",
@@ -412,7 +418,8 @@ players = Player.create([{
 	"assists": 0,
 	"points": 0,
 	"pim": 0,
-	"plusMinus": 0
+	"plusMinus": 0,
+	"abr": "CRD"
 }, {
 	"name": "Shaun Brown",
 	"team": "Canterbury Red Devils",
@@ -424,7 +431,8 @@ players = Player.create([{
 	"assists": 0,
 	"points": 0,
 	"pim": 0,
-	"plusMinus": -3
+	"plusMinus": -3,
+	"abr": "CRD"
 }, {
 	"name": "Liam Dallimore",
 	"team": "Canterbury Red Devils",
@@ -436,7 +444,8 @@ players = Player.create([{
 	"assists": 1,
 	"points": 5,
 	"pim": 4,
-	"plusMinus": 0
+	"plusMinus": 0,
+	"abr": "CRD"
 }, {
 	"name": "Alex Damm",
 	"team": "Canterbury Red Devils",
@@ -448,7 +457,8 @@ players = Player.create([{
 	"assists": 0,
 	"points": 0,
 	"pim": 0,
-	"plusMinus": 0
+	"plusMinus": 0,
+	"abr": "CRD"
 }, {
 	"name": "Alex Egan",
 	"team": "Canterbury Red Devils",
@@ -460,7 +470,8 @@ players = Player.create([{
 	"assists": 0,
 	"points": 0,
 	"pim": 0,
-	"plusMinus": -1
+	"plusMinus": -1,
+	"abr": "CRD"
 }, {
 	"name": "Justin Fuller",
 	"team": "Canterbury Red Devils",
@@ -472,7 +483,8 @@ players = Player.create([{
 	"assists": 7,
 	"points": 13,
 	"pim": 4,
-	"plusMinus": 2
+	"plusMinus": 2,
+	"abr": "CRD"
 }, {
 	"name": "Jeong Kim",
 	"team": "Canterbury Red Devils",
@@ -484,7 +496,8 @@ players = Player.create([{
 	"assists": 0,
 	"points": 0,
 	"pim": 0,
-	"plusMinus": 0
+	"plusMinus": 0,
+	"abr": "CRD"
 }, {
 	"name": "Luke Hill",
 	"team": "Canterbury Red Devils",
@@ -496,7 +509,8 @@ players = Player.create([{
 	"assists": 0,
 	"points": 0,
 	"pim": 0,
-	"plusMinus": 0
+	"plusMinus": 0,
+	"abr": "CRD"
 }, {
 	"name": "Jaxson Lane",
 	"team": "Canterbury Red Devils",
@@ -508,7 +522,8 @@ players = Player.create([{
 	"assists": 5,
 	"points": 8,
 	"pim": 14,
-	"plusMinus": -4
+	"plusMinus": -4,
+	"abr": "CRD"
 }, {
 	"name": "Anton Purver",
 	"team": "Canterbury Red Devils",
@@ -520,7 +535,8 @@ players = Player.create([{
 	"assists": 1,
 	"points": 2,
 	"pim": 4,
-	"plusMinus": 0
+	"plusMinus": 0,
+	"abr": "CRD"
 }, {
 	"name": "Nik Stefanissin",
 	"team": "Canterbury Red Devils",
@@ -532,7 +548,8 @@ players = Player.create([{
 	"assists": 0,
 	"points": 0,
 	"pim": 0,
-	"plusMinus": 0
+	"plusMinus": 0,
+	"abr": "CRD"
 }, {
 	"name": "Moses Bygate-Smith",
 	"team": "Canterbury Red Devils",
@@ -544,7 +561,8 @@ players = Player.create([{
 	"assists": 0,
 	"points": 0,
 	"pim": 0,
-	"plusMinus": -1
+	"plusMinus": -1,
+	"abr": "CRD"
 }, {
 	"name": "Ryan Fraser",
 	"team": "Canterbury Red Devils",
@@ -556,7 +574,8 @@ players = Player.create([{
 	"assists": 0,
 	"points": 0,
 	"pim": 0,
-	"plusMinus": 0
+	"plusMinus": 0,
+	"abr": "CRD"
 }, {
 	"name": "Mason Kennedy",
 	"team": "Canterbury Red Devils",
@@ -568,7 +587,8 @@ players = Player.create([{
 	"assists": 4,
 	"points": 4,
 	"pim": 14,
-	"plusMinus": 1
+	"plusMinus": 1,
+	"abr": "CRD"
 }, {
 	"name": "Henry Morley-Hall",
 	"team": "Canterbury Red Devils",
@@ -580,7 +600,8 @@ players = Player.create([{
 	"assists": 0,
 	"points": 0,
 	"pim": 0,
-	"plusMinus": 0
+	"plusMinus": 0,
+	"abr": "CRD"
 }, {
 	"name": "Kyle Nash",
 	"team": "Canterbury Red Devils",
@@ -592,7 +613,8 @@ players = Player.create([{
 	"assists": 1,
 	"points": 1,
 	"pim": 4,
-	"plusMinus": -1
+	"plusMinus": -1,
+	"abr": "CRD"
 }, {
 	"name": "Mason Rees",
 	"team": "Canterbury Red Devils",
@@ -604,7 +626,8 @@ players = Player.create([{
 	"assists": 0,
 	"points": 0,
 	"pim": 0,
-	"plusMinus": 0
+	"plusMinus": 0,
+	"abr": "CRD"
 }, {
 	"name": "Michael Coleman",
 	"team": "Canterbury Red Devils",
@@ -613,7 +636,8 @@ players = Player.create([{
 	"number": 1,
 	"gp": 9,
 	"gaa": 4.49,
-	"svs": 899
+	"svs": 899,
+	"abr": "CRD"
 }, {
 	"name": "Steven Coull",
 	"team": "Canterbury Red Devils",
@@ -622,7 +646,8 @@ players = Player.create([{
 	"number": 35,
 	"gp": 2,
 	"gaa": 13.02,
-	"svs": 784
+	"svs": 784,
+	"abr": "CRD"
 }, {
 	"name": "Richard Bigsby",
 	"team": "Canterbury Red Devils",
@@ -631,10 +656,9 @@ players = Player.create([{
 	"number": 0,
 	"gp": 0,
 	"gaa": 0.00,
-	"svs": 000
-},
-
-{
+	"svs": 000,
+	"abr": "CRD"
+}, {
 	"name": "Matt Schneider",
 	"team": "Skycity Stampede",
 	"shoots": "Left",
@@ -645,7 +669,8 @@ players = Player.create([{
 	"assists": 9,
 	"points": 23,
 	"pim": 2,
-	"plusMinus": 12
+	"plusMinus": 12,
+	"abr": "STP"
 }, {
 	"name": "Braden Lee",
 	"team": "Skycity Stampede",
@@ -657,7 +682,8 @@ players = Player.create([{
 	"assists": 5,
 	"points": 12,
 	"pim": 8,
-	"plusMinus": 10
+	"plusMinus": 10,
+	"abr": "STP"
 }, {
 	"name": "Bert Haines",
 	"team": "Skycity Stampede",
@@ -669,7 +695,8 @@ players = Player.create([{
 	"assists": 2,
 	"points": 3,
 	"pim": 30,
-	"plusMinus": 0
+	"plusMinus": 0,
+	"abr": "STP"
 }, {
 	"name": "Hayden Argyle",
 	"team": "Skycity Stampede",
@@ -681,7 +708,8 @@ players = Player.create([{
 	"assists": 5,
 	"points": 7,
 	"pim": 49,
-	"plusMinus": 9
+	"plusMinus": 9,
+	"abr": "STP"
 }, {
 	"name": "Michael Attwell",
 	"team": "Botany Swarm",
@@ -693,7 +721,8 @@ players = Player.create([{
 	"assists": 8,
 	"points": 13,
 	"pim": 30,
-	"plusMinus": -7
+	"plusMinus": -7,
+	"abr": "BSW"
 }, {
 	"name": "K.C Ball",
 	"team": "Botany Swarm",
@@ -705,7 +734,8 @@ players = Player.create([{
 	"assists": 9,
 	"points": 9,
 	"pim": 6,
-	"plusMinus": -8
+	"plusMinus": -8,
+	"abr": "BSW"
 }, {
 	"name": "Oliver Hay",
 	"team": "Botany Swarm",
@@ -717,7 +747,8 @@ players = Player.create([{
 	"assists": 6,
 	"points": 8,
 	"pim": 47,
-	"plusMinus": -7
+	"plusMinus": -7,
+	"abr": "BSW"
 }, {
 	"name": "Logan Fraser",
 	"team": "Botany Swarm",
@@ -729,7 +760,8 @@ players = Player.create([{
 	"assists": 3,
 	"points": 5,
 	"pim": 4,
-	"plusMinus": 3
+	"plusMinus": 3,
+	"abr": "BSW"
 }, {
 	"name": "Joe Orr",
 	"team": "Dunedin Thunder",
@@ -741,7 +773,8 @@ players = Player.create([{
 	"assists": 0,
 	"points": 0,
 	"pim": 8,
-	"plusMinus": -9
+	"plusMinus": -9,
+	"abr": "THU"
 }, {
 	"name": "Gints Leitis",
 	"team": "Dunedin Thunder",
@@ -753,7 +786,8 @@ players = Player.create([{
 	"assists": 14,
 	"points": 27,
 	"pim": 30,
-	"plusMinus": -9
+	"plusMinus": -9,
+	"abr": "THU"
 }, {
 	"name": "Connor Harrison",
 	"team": "Dunedin Thunder",
@@ -765,7 +799,8 @@ players = Player.create([{
 	"assists": 7,
 	"points": 10,
 	"pim": 45,
-	"plusMinus": -11
+	"plusMinus": -11,
+	"abr": "THU"
 }, {
 	"name": "Matas Barakauskas",
 	"team": "Dunedin Thunder",
@@ -777,7 +812,8 @@ players = Player.create([{
 	"assists": 0,
 	"points": 0,
 	"pim": 2,
-	"plusMinus": -5
+	"plusMinus": -5,
+	"abr": "THU"
 }])
 
 p "Added #{Player.count} players"
