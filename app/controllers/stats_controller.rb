@@ -1,4 +1,4 @@
-class PlayersController < ApplicationController
+class StatsController < ApplicationController
   before_action :set_player, only: [:show, :edit, :update, :destroy]
 
   # GET /players
@@ -23,6 +23,11 @@ class PlayersController < ApplicationController
   # GET /players/1.json
   def show
     @player = Player.find(params[:id])
+  end
+
+  def all
+    @skaters = Player.where(position: ['Forward', 'Defence'])
+    @gk = Player.where(position: 'GK')
   end
 
   def swarm

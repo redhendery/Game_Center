@@ -1,16 +1,16 @@
 <div class="container-fluid">
   <div class="well">
     <ul class="nav nav-pills nav-justified">
-      <li><%= link_to 'League Leaders', players_path %></li>
-      <li><%= link_to 'Botany Swarm', players_swarm_path %></li>
-      <li><%= link_to 'Canterbury Red Devils', players_reddevils_path %></li>
-      <li><%= link_to 'Dunedin Thunder', players_thunder_path %></li>
-      <li><%= link_to 'Skycity Stampede', players_stampede_path %></li>
-      <li><%= link_to 'West Auckland Admirals', players_admirals_path %></li>
+      <li><%= link_to 'League Leaders', stats_path %></li>
+      <li><%= link_to 'Botany Swarm', stats_swarm_path %></li>
+      <li><%= link_to 'Canterbury Red Devils', stats_reddevils_path %></li>
+      <li><%= link_to 'Dunedin Thunder', stats_thunder_path %></li>
+      <li><%= link_to 'Skycity Stampede', stats_stampede_path %></li>
+      <li><%= link_to 'West Auckland Admirals', stats_admirals_path %></li>
     </ul>
   </div>
   <div class="col-xs-9">
-    <% @thunder_skaters.each do |skater| %>
+    <% @swarm_skaters.each do |skater| %>
       <div class="col-xs-4">
         <div class="panel panel-info">
           <div class="container-fluid panel-heading">
@@ -54,7 +54,7 @@
     <% end %>
   </div>
   <div class="col-xs-3">
-    <% @thunder_gk.each do |gk| %>
+    <% @swarm_gk.each do |gk| %>
       <div class="col-xs-12">
         <div class="panel panel-info">
           <div class="container-fluid panel-heading">
