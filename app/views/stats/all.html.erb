@@ -1,1 +1,46 @@
-<h1>Hello</h1>
+<div class="container-fluid">
+  <div class="well">
+    <ul class="nav nav-pills nav-justified">
+      <li><%= link_to 'League Leaders', stats_path %></li>
+      <li><%= link_to 'Botany Swarm', stats_swarm_path %></li>
+      <li><%= link_to 'Canterbury Red Devils', stats_reddevils_path %></li>
+      <li><%= link_to 'Dunedin Thunder', stats_thunder_path %></li>
+      <li><%= link_to 'Skycity Stampede', stats_stampede_path %></li>
+      <li><%= link_to 'West Auckland Admirals', stats_admirals_path %></li>
+    </ul>
+  </div>
+  <div class="container">
+    <table id="all" class="table table-striped" cellspacing="0" width="100%">
+      <thead>
+        <tr>
+          <!-- <th>#</th> -->
+          <th data-column="1">Player</th>
+          <th>Team</th>
+          <th data-column="2">Position</th>
+          <th class="text-center" data-column="3">GP</th>
+          <th class="text-center" data-column="4">G</th>
+          <th class="text-center" data-column="5">A</th>
+          <th class="text-center" data-column="6">P</th>
+          <th class="text-center" data-column="8">+/-</th>
+          <th class="text-center" data-column="7">PIM</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @skaters.each_with_index do |skater, i| %>
+        <tr>
+          <!-- <td><%= i += 1 %></td> -->
+          <td data-column="1"><%= skater.name %></td>
+          <td data-column=""><%= skater.abr %></td>
+          <td data-column="2"><%= skater.position %></td>
+          <td class="text-center" data-column="3"><%= skater.gp %></td>
+          <td class="text-center" data-column="4"><%= skater.goals %></td>
+          <td class="text-center" data-column="5"><%= skater.assists %></td>
+          <td class="text-center" data-column="6"><%= skater.points %></td>
+          <td class="text-center" data-column="8"><%= skater.plusMinus %></td>
+          <td class="text-center" data-column="7"><%= skater.pim %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

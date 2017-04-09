@@ -2,93 +2,39 @@
   <div class="well">
     <ul class="nav nav-pills nav-justified">
       <li><%= link_to 'League Leaders', stats_path %></li>
-      <li><%= link_to 'Botany Swarm', stats_swarm_path %></li>
+      <li><%= link_to 'All', stats_all_path %></li>
       <li><%= link_to 'Canterbury Red Devils', stats_reddevils_path %></li>
       <li><%= link_to 'Dunedin Thunder', stats_thunder_path %></li>
       <li><%= link_to 'Skycity Stampede', stats_stampede_path %></li>
       <li><%= link_to 'West Auckland Admirals', stats_admirals_path %></li>
     </ul>
   </div>
-  <div class="col-xs-9">
-    <% @swarm_skaters.each do |skater| %>
-      <div class="col-xs-4">
-        <div class="panel panel-info">
-          <div class="container-fluid panel-heading">
-            <div class="row">
-              <div class="col-xs-10">
-                <h4 class="list-group-item-heading"><%= skater.name %></h4>
-                <p class="list-group-item-text">Shoots: <%= skater.shoots %></p>
-              </div>
-              <div class="col-xs-2">
-                <h4 class="list-group-item-heading pull-right">#<%= skater.number %></h4>
-                <p class="list-group-item-text pull-right"><%= skater.position %></p>
-              </div>
-            </div>
-          </div>
-          <div class="panel-body">
-            <div class="table-responsive">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th class="text-center col-xs-2">GP</th>
-                    <th class="text-center col-xs-2">G</th>
-                    <th class="text-center col-xs-2">A</th>
-                    <th class="text-center col-xs-2">P</th>
-                    <th class="text-center col-xs-2">PIM</th>
-                    <th class="text-center col-xs-2">+/-</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <td class="text-center col-xs-2"><%= skater.gp %></td>
-                  <td class="text-center col-xs-2"><%= skater.goals %></td>
-                  <td class="text-center col-xs-2"><%= skater.assists %></td>
-                  <td class="text-center col-xs-2"><%= skater.points %></td>
-                  <td class="text-center col-xs-2"><%= skater.pim %></td>
-                  <td class="text-center col-xs-2"><%= skater.plusMinus %></td>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
+  <table id="swarm" class="table table-striped" cellspacing="0" width="100%">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>GP</th>
+        <th>G</th>
+        <th>A</th>
+        <th>P</th>
+        <th>PIM</th>
+        <th>+/-</th>
+      </tr>
+    </thead>
+    <tbody>
+    <% @swarm_skaters.each_with_index do |skater, i| %>
+      <tr>
+        <td><%= skater.name %></td>
+        <td><%= skater.position %></td>
+        <td><%= skater.gp %></td>
+        <td><%= skater.goals %></td>
+        <td><%= skater.assists %></td>
+        <td><%= skater.points %></td>
+        <td><%= skater.pim %></td>
+        <td><%= skater.plusMinus %></td>
+      </tr>
     <% end %>
-  </div>
-  <div class="col-xs-3">
-    <% @swarm_gk.each do |gk| %>
-      <div class="col-xs-12">
-        <div class="panel panel-info">
-          <div class="container-fluid panel-heading">
-            <div class="row">
-              <div class="col-xs-10">
-                <h4 class="list-group-item-heading"><%= gk.name %></h4>
-                <p class="list-group-item-text">Catches: <%= gk.catches %></p>
-              </div>
-              <div class="col-xs-2">
-                <h4 class="list-group-item-heading pull-right">#<%= gk.number %></h4>
-                <p class="list-group-item-text pull-right"><%= gk.position %></p>
-              </div>
-            </div>
-          </div>
-          <div class="panel-body">
-            <div class="table-responsive">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th class="text-center col-xs-2">GP</th>
-                    <th class="text-center col-xs-2">GAA</th>
-                    <th class="text-center col-xs-2">SVS</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <td class="text-center col-xs-2"><%= gk.gp %></td>
-                  <td class="text-center col-xs-2"><%= gk.gaa %></td>
-                   <td class="text-center col-xs-2">.<%= gk.svs %></td>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    <% end %>
-  </div>
+    </tbody>
+  </table>
 </div>
