@@ -1,24 +1,4 @@
 <div class="container-fluid">
-  <%= render partial: 'schedule/partials/teams' %>
-
-  <% @schedules.each do |schedule| %>
-    <div class="col-xs-6">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <div class="panel-title">
-            <h4 class="text-center"><%= schedule.leagueGame %> - <%= schedule.home %> v <%= schedule.away %></h4>
-          </div>
-          <div class="panel-body">
-            <span class="col-xs-3"><img src="<%= schedule.homeLogo %>" alt="<%= schedule.homeLogo %>"></span>
-            <span class="col-xs-6 text-center"><%= link_to 'Details of upcoming game', schedule_path(schedule) %></span>
-            <span class="col-xs-3"><img class="pull-right" src="<%= schedule.awayLogo %>" alt="<%= schedule.awayLogo %>"></span>
-          </div>
-          <div class="panel-footer fix">
-            <span><%= schedule.venue %></span>
-            <span class="pull-right"><%= schedule.date %></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  <% end %>
+  <%= render 'schedule/partials/teams' %>
+  <%= render 'schedule/partials/schedule_item' %>
 </div>

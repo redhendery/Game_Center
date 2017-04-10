@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
 
+  get 'teams/swarm'
+  get 'teams/reddevils'
+  get 'teams/thunder'
+  get 'teams/stampede'
+  get 'teams/admirals'
+
+  resources :teams
+
+  # Stats routes
   get 'stats/all'
   get 'stats/swarm'
   get 'stats/reddevils'
@@ -8,9 +17,8 @@ Rails.application.routes.draw do
   get 'stats/admirals'
 
   resources :stats
-  # get 'schedule/index'
 
-# Schedule routes
+  # Schedule routes
   get 'schedule/swarm'
   get 'schedule/reddevils'
   get 'schedule/thunder'
