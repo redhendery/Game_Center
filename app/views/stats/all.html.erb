@@ -13,31 +13,31 @@
     <table id="all" class="table table-striped" cellspacing="0" width="100%">
       <thead>
         <tr>
-          <!-- <th>#</th> -->
-          <th data-column="1">Player</th>
+          <th></th>
+          <th>Player</th>
           <th>Team</th>
-          <th data-column="2">Position</th>
-          <th class="text-center" data-column="3">GP</th>
-          <th class="text-center" data-column="4">G</th>
-          <th class="text-center" data-column="5">A</th>
-          <th class="text-center" data-column="6">P</th>
-          <th class="text-center" data-column="8">+/-</th>
-          <th class="text-center" data-column="7">PIM</th>
+          <th>Position</th>
+          <th>GP</th>
+          <th>G</th>
+          <th>A</th>
+          <th>P</th>
+          <th>+/-</th>
+          <th>PIM</th>
         </tr>
       </thead>
       <tbody>
-      <% @skaters.each_with_index do |skater, i| %>
+      <% @skaters.each do |skater, i| %>
         <tr>
-          <!-- <td><%= i += 1 %></td> -->
-          <td data-column="1"><%= skater.name %></td>
-          <td data-column=""><%= skater.abr %></td>
-          <td data-column="2"><%= skater.position %></td>
-          <td class="text-center" data-column="3"><%= skater.gp %></td>
-          <td class="text-center" data-column="4"><%= skater.goals %></td>
-          <td class="text-center" data-column="5"><%= skater.assists %></td>
-          <td class="text-center" data-column="6"><%= skater.points %></td>
-          <td class="text-center" data-column="8"><%= skater.plusMinus %></td>
-          <td class="text-center" data-column="7"><%= skater.pim %></td>
+          <td></td>
+          <td><%= skater.name %></td>
+          <td><%= skater.abr %></td>
+          <td><%= skater.position %></td>
+          <td><%= skater.gp %></td>
+          <td><%= skater.goals %></td>
+          <td><%= skater.assists %></td>
+          <td><%= skater.points %></td>
+          <td><%= skater.plusMinus %></td>
+          <td><%= skater.pim %></td>
         </tr>
       <% end %>
       </tbody>

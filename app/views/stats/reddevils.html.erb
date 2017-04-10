@@ -12,7 +12,8 @@
   <table id="reddevils" class="table table-striped" cellspacing="0" width="100%">
     <thead>
       <tr>
-        <th>Name</th>
+        <th></th>
+        <th>Player</th>
         <th>Position</th>
         <th>GP</th>
         <th>G</th>
@@ -23,8 +24,9 @@
       </tr>
     </thead>
     <tbody>
-    <% @reddevils_skaters.each_with_index do |skater, i| %>
+    <% @reddevils_skaters.each do |skater| %>
       <tr>
+        <td></td>
         <td><%= skater.name %></td>
         <td><%= skater.position %></td>
         <td><%= skater.gp %></td>

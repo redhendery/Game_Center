@@ -12,6 +12,7 @@
   <table id="swarm" class="table table-striped" cellspacing="0" width="100%">
     <thead>
       <tr>
+        <th></th>
         <th>Name</th>
         <th>Position</th>
         <th>GP</th>
@@ -23,8 +24,9 @@
       </tr>
     </thead>
     <tbody>
-    <% @swarm_skaters.each_with_index do |skater, i| %>
+    <% @swarm_skaters.each do |skater, i| %>
       <tr>
+        <td></td>
         <td><%= skater.name %></td>
         <td><%= skater.position %></td>
         <td><%= skater.gp %></td>
