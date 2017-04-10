@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20170405053325) do
     t.string   "shoots"
     t.string   "catches"
     t.string   "position"
+    t.string   "abr"
     t.integer  "number"
     t.integer  "gp"
     t.integer  "goals"

@@ -1,18 +1,33 @@
-class PlayersController < ApplicationController
+class StatsController < ApplicationController
   before_action :set_player, only: [:show, :edit, :update, :destroy]
 
   # GET /players
   # GET /players.json
   def index
     @players = Player.all
+
+    # Skater sort methods
     @player_skaters = Player.where(position: ['Forward', 'Defence'])
+    @player_skaters_points = Player.where(position: ['Forward', 'Defence']).order(points: :desc)
+    @player_skaters_goals = Player.where(position: ['Forward', 'Defence']).order(goals: :desc)
+    @player_skaters_assists = Player.where(position: ['Forward', 'Defence']).order(assists: :desc)
+    @player_skaters_plusMinus = Player.where(position: ['Forward', 'Defence']).order(plusMinus: :desc)
+
+    # Goaltender sort methods
     @player_gk = Player.where(position: 'GK')
+    @player_gk_gaa = Player.where(position: 'GK').order(:gaa)
+    @player_gk_svs = Player.where(position: 'GK').order(svs: :desc)
   end
 
   # GET /players/1
   # GET /players/1.json
   def show
     @player = Player.find(params[:id])
+  end
+
+  def all
+    @skaters = Player.where(position: ['Forward', 'Defence'])
+    @gk = Player.where(position: 'GK')
   end
 
   def swarm
