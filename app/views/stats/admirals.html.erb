@@ -1,7 +1,7 @@
 <div class="container-fluid">
   <div class="well">
     <ul class="nav nav-pills nav-justified">
-      <li><%= link_to 'League Leaders', stats_path %></li>
+      <li><%= link_to 'Leaders', stats_path %></li>
       <li><%= link_to 'All', stats_all_path %></li>
       <li><%= link_to 'Botany Swarm', stats_swarm_path %></li>
       <li><%= link_to 'Canterbury Red Devils', stats_reddevils_path %></li>
@@ -24,19 +24,19 @@
       </tr>
     </thead>
     <tbody>
-    <% @admirals_skaters.each do |skater, i| %>
-      <tr>
-        <td></td>
-        <td><%= skater.name %></td>
-        <td><%= skater.position %></td>
-        <td><%= skater.gp %></td>
-        <td><%= skater.goals %></td>
-        <td><%= skater.assists %></td>
-        <td><%= skater.points %></td>
-        <td><%= skater.pim %></td>
-        <td><%= skater.plusMinus %></td>
-      </tr>
-    <% end %>
+      <% @admirals_skaters.each do |skater| %>
+        <tr>
+          <td></td>
+          <td><%= skater.name %></td>
+          <td><%= skater.position %></td>
+          <td><%= skater.gp %></td>
+          <td><%= skater.goals %></td>
+          <td><%= skater.assists %></td>
+          <td><%= skater.points %></td>
+          <td><%= skater.pim %></td>
+          <td><%= skater.plusMinus %></td>
+        </tr>
+      <% end %>
     </tbody>
   </table>
 </div>
