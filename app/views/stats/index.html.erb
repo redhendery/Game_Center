@@ -1,138 +1,29 @@
 <div class="container-fluid">
-  <div class="well">
-    <ul class="nav nav-pills nav-justified">
-      <li><%= link_to 'All', stats_all_path %></li>
-      <li><%= link_to 'Botany Swarm', stats_swarm_path %></li>
-      <li><%= link_to 'Canterbury Red Devils', stats_reddevils_path %></li>
-      <li><%= link_to 'Dunedin Thunder', stats_thunder_path %></li>
-      <li><%= link_to 'Skycity Stampede', stats_stampede_path %></li>
-      <li><%= link_to 'West Auckland Admirals', stats_admirals_path %></li>
-    </ul>
-  </div>
+  <%= render partial: 'stats/partials/teams' %>
 
   <div class="col-xs-8 headings"><h3>OFFENSIVE LEADERS</h3></div>
   <div class="col-xs-4 headings"><h3>GOALTENDING LEADERS</h3></div>
 
-  <!--  Points Leaders-->
+  <!-- Leading Skaters -->
   <div class="col-xs-8">
     <div class="col-xs-6">
-      <div class="panel panel-info">
-        <div class="container-fluid panel-heading">
-          <div class="col-xs-8"><h4 class="list-group-item-heading heading">Points</h4></div>
-          <div class="col-xs-4"><h5 class="list-group-item-heading pull-right more"><%= link_to 'More >>', stats_all_path %></h5></div>
-        </div>
-        <div class="panel-body leaders">
-          <% @player_skaters_points.limit(5).each_with_index do |player, i| %>
-            <div class="table-responsive">
-              <span><strong><%= i += 1 %>. </strong></span>
-              <span><strong><%= player.name %></strong></span>
-              <span><small><small><%= player.abr %></small></small></span>
-              <span class="pull-right"><strong><%= player.points %></strong></span>
-            </div>
-          <% end %>
-        </div>
-      </div>
+      <%= render partial: 'stats/partials/points' %>
     </div>
-
-  <!--  Goals Leaders-->
     <div class="col-xs-6">
-      <div class="panel panel-info">
-        <div class="container-fluid panel-heading">
-          <div class="col-xs-8"><h4 class="list-group-item-heading heading">Goals</h4></div>
-          <div class="col-xs-4"><h5 class="list-group-item-heading pull-right more"><%= link_to 'More >>', stats_all_path %></h5></div>
-        </div>
-        <div class="panel-body leaders">
-          <% @player_skaters_goals.limit(5).each_with_index do |player, i| %>
-            <div class="table-responsive">
-              <span><strong><%= i += 1 %>. </strong></span>
-              <span><strong><%= player.name %></strong></span>
-              <span><small><%= player.abr %></small></span>
-              <span class="pull-right"><strong><%= player.goals %></strong></span>
-            </div>
-          <% end %>
-        </div>
-      </div>
+      <%= render partial: 'stats/partials/goals' %>
     </div>
-
-  <!--  Assits Leaders-->
     <div class="col-xs-6">
-      <div class="panel panel-info">
-        <div class="container-fluid panel-heading">
-          <div class="col-xs-8"><h4 class="list-group-item-heading heading">Assists</h4></div>
-          <div class="col-xs-4"><h5 class="list-group-item-heading pull-right more"><%= link_to 'More >>', stats_all_path %></h5></div>
-        </div>
-        <div class="panel-body leaders">
-          <% @player_skaters_assists.limit(5).each_with_index do |player, i| %>
-            <div class="table-responsive">
-              <span><strong><%= i += 1 %>. </strong></span>
-              <span><strong><%= player.name %></strong></span>
-              <span><small><%= player.abr %></small></span>
-              <span class="pull-right"><strong><%= player.assists %></strong></span>
-            </div>
-          <% end %>
-        </div>
-      </div>
+      <%= render partial: 'stats/partials/assists' %>
     </div>
-
-  <!--  Plus Minus Leaders-->
     <div class="col-xs-6">
-      <div class="panel panel-info">
-        <div class="container-fluid panel-heading">
-          <div class="col-xs-8"><h4 class="list-group-item-heading heading">Plus Minus</h4></div>
-          <div class="col-xs-4"><h5 class="list-group-item-heading pull-right more"><%= link_to 'More >>', stats_all_path %></h5></div>
-        </div>
-        <div class="panel-body leaders">
-          <% @player_skaters_plusMinus.limit(5).each_with_index do |player, i| %>
-            <div class="table-responsive">
-              <span><strong><%= i += 1 %>. </strong></span>
-              <span><strong><%= player.name %></strong></span>
-              <span><small><%= player.abr %></small></span>
-              <span class="pull-right"><strong><%= player.plusMinus %></strong></span>
-            </div>
-          <% end %>
-        </div>
-      </div>
+      <%= render partial: 'stats/partials/plusMinus' %>
     </div>
   </div>
-
-  <!--  GAA Leaders -->
+  <!-- Leading GK's -->
   <div class="col-xs-4">
-    <div class="panel panel-info">
-      <div class="container-fluid panel-heading">
-        <div class="col-xs-8"><h4 class="list-group-item-heading heading">Goals Against Average</h4></div>
-        <div class="col-xs-4"><h5 class="list-group-item-heading pull-right more"><%= link_to 'More >>', stats_all_path %></h5></div>
-      </div>
-      <div class="panel-body leaders">
-        <% @player_gk_gaa.limit(5).each_with_index do |gk, i| %>
-          <div class="table-responsive">
-            <span><strong><%= i += 1 %>. </strong></span>
-            <span><strong><%= gk.name %></strong></span>
-            <span><small><%= gk.abr %></small></span>
-            <span class="pull-right"><strong><%= gk.gaa %></strong></span>
-          </div>
-        <% end %>
-      </div>
-    </div>
+    <%= render partial: 'stats/partials/gaa' %>
   </div>
-
-  <!--  SVS Leaders -->
   <div class="col-xs-4">
-    <div class="panel panel-info">
-      <div class="container-fluid panel-heading">
-        <div class="col-xs-8"><h4 class="list-group-item-heading heading">Save Percentage</h4></div>
-        <div class="col-xs-4"><h5 class="list-group-item-heading pull-right more"><%= link_to 'More >>', stats_all_path %></h5></div>
-      </div>
-      <div class="panel-body leaders">
-        <% @player_gk_svs.limit(5).each_with_index do |gk, i| %>
-          <div class="table-responsive">
-            <span><strong><%= i += 1 %>. </strong></span>
-            <span><strong><%= gk.name %></strong></span>
-            <span><small><%= gk.abr %></small></span>
-            <span class="pull-right"><strong>.<%= gk.svs %></strong></span>
-          </div>
-        <% end %>
-      </div>
-    </div>
+    <%= render partial: 'stats/partials/svs' %>
   </div>
-
 </div>
