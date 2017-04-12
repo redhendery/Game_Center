@@ -1,18 +1,18 @@
 <div class="panel panel-info">
   <div class="container-fluid panel-heading">
-    <%= link_to stats_swarm_path do %>
-      <div class="col-xs-6"><h4 class="list-group-item-heading heading">Goals</h4></div>
+    <%= link_to stats_reddevils_path do %>
+      <div class="col-xs-6"><h4 class="list-group-item-heading heading">Assists</h4></div>
       <div class="col-xs-6">
         <h5 class="list-group-item-heading pull-right more">More >></h5>
       </div>
     <% end %>
   </div>
   <div class="panel-body leaders">
-    <% @swarm_skaters_goals.limit(5).each_with_index do |player, i| %>
+    <% @reddevils_skaters_assists.limit(5).each_with_index do |player, i| %>
       <div class="table-responsive">
         <span><strong><%= i += 1 %>. </strong></span>
         <span><strong><%= player.name %></strong></span>
-        <span class="pull-right"><strong><%= player.goals %></strong></span>
+        <span class="pull-right"><strong><%= player.assists %></strong></span>
       </div>
     <% end %>
   </div>

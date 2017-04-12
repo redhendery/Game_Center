@@ -8,6 +8,7 @@
 schedules = Schedule.create([{
 	"away": "Canterbury Red Devils",
 	"awayAbr": "CRD",
+	"date": "26/05/2017",
 	"prettyDate": "Friday, May 26th, 6:50pm",
 	"home": "Skycity Stampede",
 	"homeAbr": "STP",
@@ -18,6 +19,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Canterbury Red Devils",
 	"awayAbr": "CRD",
+	"date": "27/05/2017",
 	"prettyDate": "Saturday, May 27th, 6:50pm",
 	"home": "Skycity Stampede",
 	"homeAbr": "STP",
@@ -50,6 +52,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "West Auckland Admirals",
 	"awayAbr": "WAA",
+	"date": "10/06/2017",
 	"prettyDate": "Saturday, June 10th, 4:30pm",
 	"home": "Dunedin Thunder",
 	"homeAbr": "THU",
@@ -60,6 +63,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "West Auckland Admirals",
 	"awayAbr": "WAA",
+	"date": "11/06/2017",
 	"prettyDate": "Saturday, June 11th, 4:30pm",
 	"home": "Dunedin Thunder",
 	"homeAbr": "THU",
@@ -92,6 +96,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Skycity Stampede",
 	"awayAbr": "STP",
+	"date": "17/06/2107",
 	"prettyDate": "Saturday, June 17th, 4:40pm",
 	"home": "Dunedin Thunder",
 	"homeAbr": "THU",
@@ -102,6 +107,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Skycity Stampede",
 	"awayAbr": "STP",
+	"date": "18/06/2107",
 	"prettyDate": "Sunday, June 18th, 4:40pm",
 	"home": "Dunedin Thunder",
 	"homeAbr": "THU",
@@ -112,6 +118,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Canterbury Red Devils",
 	"awayAbr": "CRD",
+	"date": "17/06/2107",
 	"prettyDate": "Saturday, June 17th, 4:30pm",
 	"home": "West Auckland Admirals",
 	"homeAbr": "WAA",
@@ -122,6 +129,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Canterbury Red Devils",
 	"awayAbr": "CRD",
+	"date": "18/06/2107",
 	"prettyDate": "Sunday, June 18th, 4:30pm",
 	"home": "West Auckland Admirals",
 	"homeAbr": "WAA",
@@ -132,6 +140,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Botany Swarm",
 	"awayAbr": "BSW",
+	"date": "23/06/2017",
 	"prettyDate": "Friday, June 23rd, 7:40pm",
 	"home": "Skycity Stampede",
 	"homeAbr": "STP",
@@ -142,6 +151,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Botany Swarm",
 	"awayAbr": "BSW",
+	"date": "24/06/2017",
 	"prettyDate": "Saturday, June 24th, 6:50pm",
 	"home": "Skycity Stampede",
 	"homeAbr": "STP",
@@ -152,6 +162,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Dunedin Thunder",
 	"awayAbr": "THU",
+	"date": "24/06/2017",
 	"prettyDate": "Saturday, June 24th, 4:45pm",
 	"home": "Canterbury Red Devils",
 	"homeAbr": "CRD",
@@ -162,6 +173,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Dunedin Thunder",
 	"awayAbr": "THU",
+	"date": "25/06/2017",
 	"prettyDate": "Sunday, June 25th, 4:45pm",
 	"home": "Canterbury Red Devils",
 	"homeAbr": "CRD",
@@ -172,6 +184,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Skycity Stampede",
 	"awayAbr": "STP",
+	"date": "01/07/2017",
 	"prettyDate": "Saturday, July 1st, 4:30pm",
 	"home": "West Auckland Admirals",
 	"homeAbr": "WAA",
@@ -182,6 +195,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Skycity Stampede",
 	"awayAbr": "STP",
+	"date": "02/07/2017",
 	"prettyDate": "Sunday, July 2nd, 4:30pm",
 	"home": "West Auckland Admirals",
 	"homeAbr": "WAA",
@@ -192,6 +206,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Botany Swarm",
 	"awayAbr": "BSW",
+	"date": "01/07/2017",
 	"prettyDate": "Saturday, July 1st, 4:30pm",
 	"home": "Dunedin Thunder",
 	"homeAbr": "THU",
@@ -202,6 +217,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Botany Swarm",
 	"awayAbr": "BSW",
+	"date": "02/07/2017",
 	"prettyDate": "Sunday, July 2nd, 4:30pm",
 	"home": "Dunedin Thunder",
 	"homeAbr": "THU",
@@ -212,6 +228,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Dunedin Thunder",
 	"awayAbr": "THU",
+	"date": "07/07/2017",
 	"prettyDate": "Friday, July 7th, 6:50pm",
 	"home": "Skycity Stampede",
 	"homeAbr": "STP",
@@ -222,6 +239,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Dunedin Thunder",
 	"awayAbr": "THU",
+	"date": "08/07/2017",
 	"prettyDate": "Saturday, July 8th, 6:50pm",
 	"home": "Skycity Stampede",
 	"homeAbr": "STP",
@@ -232,6 +250,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "West Auckland Admirals",
 	"awayAbr": "WAA",
+	"date": "08/07/2017",
 	"prettyDate": "Saturday, July 8th, 4:35pm",
 	"home": "Canterbury Red Devils",
 	"homeAbr": "CRD",
@@ -242,6 +261,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "West Auckland Admirals",
 	"awayAbr": "WAA",
+	"date": "09/07/2017",
 	"prettyDate": "Sunday, July 9th 2017, 4:30pm",
 	"home": "Canterbury Red Devils",
 	"homeAbr": "CRD",
@@ -252,6 +272,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "West Auckland Admirals",
 	"awayAbr": "WAA",
+	"date": "14/07/2017",
 	"prettyDate": "Friday, July 14th, 6:50pm",
 	"home": "Skycity Stampede",
 	"homeAbr": "STP",
@@ -262,6 +283,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "West Auckland Admirals",
 	"awayAbr": "WAA",
+	"date": "15/07/2017",
 	"prettyDate": "Saturday, July 15th, 6:50pm",
 	"home": "Skycity Stampede",
 	"homeAbr": "STP",
@@ -272,6 +294,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Dunedin Thunder",
 	"awayAbr": "THU",
+	"date": "16/07/2107",
 	"prettyDate": "Sunday, July 16th, 4:45pm",
 	"home": "Botany Swarm",
 	"homeAbr": "BSW",
@@ -282,6 +305,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Dunedin Thunder",
 	"awayAbr": "THU",
+	"date": "22/07/2107",
 	"prettyDate": "Saturday, July 22nd, 4:45pm",
 	"home": "Botany Swarm",
 	"homeAbr": "BSW",
@@ -292,6 +316,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Skycity Stampede",
 	"awayAbr": "STP",
+	"date": "22/07/2017",
 	"prettyDate": "Saturday, July 22nd, 4:45pm",
 	"home": "Botany Swarm",
 	"homeAbr": "BSW",
@@ -302,6 +327,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Skycity Stampede",
 	"awayAbr": "STP",
+	"date": "23/07/2017",
 	"prettyDate": "Sunday, July 23rd, 4:45pm",
 	"home": "Botany Swarm",
 	"homeAbr": "BSW",
@@ -312,6 +338,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Canterbury Red Devils",
 	"awayAbr": "CRD",
+	"date": "22/07/2017",
 	"prettyDate": "Saturday, July 22nd 2017, 4:45pm",
 	"home": "Dunedin Thunder",
 	"homeAbr": "THU",
@@ -322,6 +349,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Canterbury Red Devils",
 	"awayAbr": "CRD",
+	"date": "23/07/2017",
 	"prettyDate": "Sunday, July 23nd 2017, 4:45pm",
 	"home": "Dunedin Thunder",
 	"homeAbr": "THU",
@@ -332,6 +360,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Dunedin Thunder",
 	"awayAbr": "THU",
+	"date": "29/07/2017",
 	"prettyDate": "Saturday July 29th, 4:45pm",
 	"home": "West Auckland Admirals",
 	"homeAbr": "WAA",
@@ -342,6 +371,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Dunedin Thunder",
 	"awayAbr": "THU",
+	"date": "30/07/2017",
 	"prettyDate": "Sunday July 30th, 4:45pm",
 	"home": "West Auckland Admirals",
 	"homeAbr": "WAA",
@@ -352,6 +382,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Botany Swarm",
 	"awayAbr": "BSW",
+	"date": "29/07/2017",
 	"prettyDate": "Saturday, July 29th, 4:45pm",
 	"home": "Canterbury Red Devils",
 	"homeAbr": "CRD",
@@ -362,6 +393,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Botany Swarm",
 	"awayAbr": "BSW",
+	"date": "30/07/2017",
 	"prettyDate": "Sunday, July 30th, 4:45pm",
 	"home": "Canterbury Red Devils",
 	"homeAbr": "CRD",
@@ -372,6 +404,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Skycity Stampede",
 	"awayAbr": "STP",
+	"date": "05/08/2017",
 	"prettyDate": "Saturday, August 5th, 4:45pm",
 	"home": "Canterbury Red Devils",
 	"homeAbr": "CRD",
@@ -382,6 +415,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "Skycity Stampede",
 	"awayAbr": "STP",
+	"date": "06/08/2017",
 	"prettyDate": "Sunday, August 6th, 4:45pm",
 	"home": "Canterbury Red Devils",
 	"homeAbr": "CRD",
@@ -392,6 +426,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "West Auckland Admirals",
 	"awayAbr": "WAA",
+	"date": "05/08/2017",
 	"prettyDate": "Saturday August 5th, 4:45pm",
 	"home": "Botany Swarm",
 	"homeAbr": "BSW",
@@ -402,6 +437,7 @@ schedules = Schedule.create([{
 }, {
 	"away": "West Auckland Admirals",
 	"awayAbr": "WAA",
+	"date": "06/08/2017",
 	"prettyDate": "Sunday August 6th, 4:45pm",
 	"home": "Botany Swarm",
 	"homeAbr": "BSW",

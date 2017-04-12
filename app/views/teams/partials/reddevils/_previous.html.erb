@@ -1,0 +1,30 @@
+<div class="row">
+  <% @upcoming.limit(1).each do |schedule| %>
+    <div class="col-xs-8"><h4>Previous Results</h4></div>
+    <div class="pull-right"><h4>Home: <%= schedule.homeAbr %></h4></div>
+  <% end %>
+</div>
+<div class="row">
+  <% @previous.each do |schedule| %>
+    <div class="col-xs-6">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= link_to schedule_path(schedule) do %>
+            <div class="col-xs-8">
+              <h4 class="pull-left"><%= schedule.homeAbr %></h4>
+            </div>
+            <div class="col-xs-4">
+              <h4 class="pull-right">0</h4>
+            </div>
+            <div class="col-xs-8">
+              <h4 class="pull-left"><%= schedule.awayAbr %></h4>
+            </div>
+            <div class="col-xs-4">
+              <h4 class="pull-right">0</h4>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
