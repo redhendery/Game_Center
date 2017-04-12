@@ -35,11 +35,14 @@ ActiveRecord::Schema.define(version: 20170410080837) do
   create_table "schedules", force: :cascade do |t|
     t.string   "leagueGame"
     t.string   "home"
+    t.string   "homeAbr"
     t.string   "away"
+    t.string   "awayAbr"
     t.string   "venue"
-    t.string   "date"
+    t.string   "prettyDate"
     t.string   "homeLogo"
     t.string   "awayLogo"
+    t.date     "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

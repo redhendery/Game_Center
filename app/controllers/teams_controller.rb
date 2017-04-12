@@ -4,7 +4,6 @@ class TeamsController < ApplicationController
   # GET /teams
   # GET /teams.json
   def index
-    @teams = Team.all
   end
 
   # GET /teams/1
@@ -13,7 +12,14 @@ class TeamsController < ApplicationController
   end
 
   def swarm
-    @schedule = Schedule.find([3, 4, 7, 8, 13, 14, 19, 20, 27, 28, 29, 30, 35, 36, 39, 40])
+    @swarm = Schedule.where(home: 'Botany Swarm').or(Schedule.where(away: 'Botany Swarm'))
+    @upcoming = @swarm.where('date >= ?', Time.now).limit(2)
+    @previous = @swarm.where('date <= ?', Time.now).limit(2)
+
+    @swarm_skaters_points = Player.where(team: 'Botany Swarm').where(position: ['Forward', 'Defence']).order(points: :desc)
+    @swarm_skaters_goals = Player.where(team: 'Botany Swarm').where(position: ['Forward', 'Defence']).order(goals: :desc)
+    @swarm_skaters_assists = Player.where(team: 'Botany Swarm').where(position: ['Forward', 'Defence']).order(assists: :desc)
+    @swarm_gk = Player.where(team: 'Botany Swarm').where(position: 'GK').order(svs: :desc)
   end
 
   def reddevils

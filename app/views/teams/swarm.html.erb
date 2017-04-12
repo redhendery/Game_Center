@@ -1,7 +1,30 @@
 <div class="container-fluid">
-  <div class="col-xs-6">
-    <%= render 'partials/schedule_swarm' %>
+  <%= render 'teams/partials/teams' %>
+  <div class="row games">
+    <div class="col-xs-12">
+      <div class="col-xs-4">
+        <%= render 'teams/partials/swarm/previous_swarm' %>
+      </div>
+      <div class="col-xs-4">
+        <%= image_tag("swarmLarge.png", alt: "Botany Swarm", class: "img-responsive") %>
+      </div>
+      <div class="col-xs-4">
+        <%= render 'teams/partials/swarm/upcoming_swarm' %>
+      </div>
+    </div>
   </div>
-  <div class="col-xs-6">
+  <div class="row stats">
+    <div class="col-xs-3">
+      <%= render 'teams/partials/swarm/points' %>
+    </div>
+    <div class="col-xs-3">
+      <%= render 'teams/partials/swarm/goals' %>
+    </div>
+    <div class="col-xs-3">
+      <%= render 'teams/partials/swarm/assists' %>
+    </div>
+    <div class="col-xs-3">
+      <%= render 'teams/partials/swarm/gk' %>
+    </div>
   </div>
 </div>
