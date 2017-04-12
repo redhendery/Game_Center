@@ -5,7 +5,7 @@ one:
   home: MyString
   away: MyString
   venue: MyString
-  date: MyString
+  prettyDate: MyString
   homeLogo: MyString
   awayLogo: MyString
 
@@ -14,6 +14,6 @@ two:
   home: MyString
   away: MyString
   venue: MyString
-  date: MyString
+  prettyDate: MyString
   homeLogo: MyString
   awayLogo: MyString
