@@ -15,9 +15,24 @@
  *= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
 
  */
- @import "bootstrap-sprockets";
- @import "bootstrap";
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
- body {
-   padding: 30px;
- }
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  background-color: #f5f5f5;
+}
