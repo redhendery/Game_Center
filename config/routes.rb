@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
 
+  root 'schedule#index'
+
+  # Players routes
+  get 'players/swarm'
+  get 'players/reddevils'
+  get 'players/thunder'
+  get 'players/stampede'
+  get 'players/admirals'
+
+  resources: players
+
+  # Teams routes
   get 'teams/swarm'
   get 'teams/reddevils'
   get 'teams/thunder'
@@ -26,6 +38,5 @@ Rails.application.routes.draw do
   get 'schedule/admirals'
 
   resources :schedule
-  root 'schedule#index'
 
 end
