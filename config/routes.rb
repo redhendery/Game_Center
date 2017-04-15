@@ -3,13 +3,14 @@ Rails.application.routes.draw do
   root 'schedule#index'
 
   # Players routes
+  get 'players/all'
   get 'players/swarm'
   get 'players/reddevils'
   get 'players/thunder'
   get 'players/stampede'
   get 'players/admirals'
 
-  resources: players
+  resources :players
 
   # Teams routes
   get 'teams/swarm'
