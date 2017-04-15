@@ -1,0 +1,36 @@
+<% @thunder_gk.each do |gk| %>
+  <div class="col-xs-4">
+    <div class="panel panel-info">
+      <div class="container-fluid panel-heading">
+        <div class="row">
+          <div class="col-xs-10">
+            <h4 class="list-group-item-heading"><%= gk.name %></h4>
+            <p class="list-group-item-text">Catches: <%= gk.catches %></p>
+          </div>
+          <div class="col-xs-2">
+            <h4 class="list-group-item-heading pull-right">#<%= gk.number %></h4>
+            <p class="list-group-item-text pull-right"><%= gk.position %></p>
+          </div>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="text-center col-xs-2">GP</th>
+                <th class="text-center col-xs-2">GAA</th>
+                <th class="text-center col-xs-2">SVS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <td class="text-center col-xs-2"><%= gk.gp %></td>
+              <td class="text-center col-xs-2"><%= gk.gaa %></td>
+              <td class="text-center col-xs-2">.<%= gk.svs %></td>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
