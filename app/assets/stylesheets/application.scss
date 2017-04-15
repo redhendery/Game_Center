@@ -12,10 +12,27 @@
  *
  *= require_tree .
  *= require_self
- */
- @import "bootstrap-sprockets";
- @import "bootstrap";
+ *= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
 
- body {
-   padding: 30px;
- }
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 30px;
+  background-color: #f5f5f5;
+}
