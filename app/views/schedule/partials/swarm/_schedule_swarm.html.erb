@@ -1,4 +1,4 @@
-<% @stampede.each do |schedule| %>
+<% @swarm.each do |schedule| %>
   <div class="col-xs-6">
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -8,9 +8,9 @@
           </div>
         <% end %>
         <div class="panel-body">
-          <div class="col-xs-3"><img src="<%= schedule.homeLogo %>" alt="<%= schedule.homeLogo %>"></div>
+          <div class="col-xs-3"><img src="<%= schedule.homeLogo %>" alt="<%= schedule.home %>"></div>
           <div class="col-xs-6 text-center"><%= link_to 'Details of upcoming game', schedule_path(schedule) %></div>
-          <div class="col-xs-3"><img class="pull-right" src="<%= schedule.awayLogo %>" alt="<%= schedule.awayLogo %>"></div>
+          <div class="col-xs-3"><img class="pull-right" src="<%= schedule.awayLogo %>" alt="<%= schedule.away %>"></div>
         </div>
         <div class="panel-footer">
           <span><%= schedule.venue %></span>

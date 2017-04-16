@@ -5,7 +5,8 @@ class ScheduleController < ApplicationController
   end
 
   def show
-    @schedules = Schedule.find(params[:id])
+    console
+    @schedule = Schedule.find(params[:id])
   end
 
   def swarm

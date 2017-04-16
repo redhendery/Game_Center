@@ -9,7 +9,9 @@ class CreateSchedules < ActiveRecord::Migration[5.0]
       t.string :venue
       t.string :prettyDate
       t.string :homeLogo
+      t.string :homeLogoLarge
       t.string :awayLogo
+      t.string :awayLogoLarge
       t.date :date
 
       t.timestamps

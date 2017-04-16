@@ -8,9 +8,9 @@
           </div>
         <% end %>
         <div class="panel-body">
-          <span class="col-xs-3"><img src="<%= schedule.homeLogo %>" alt="<%= schedule.homeLogo %>"></span>
+          <span class="col-xs-3"><img src="<%= schedule.homeLogo %>" alt="<%= schedule.home %>"></span>
           <span class="col-xs-6 text-center"><%= link_to 'Details of upcoming game', schedule_path(schedule) %></span>
-          <span class="col-xs-3"><img class="pull-right" src="<%= schedule.awayLogo %>" alt="<%= schedule.awayLogo %>"></span>
+          <span class="col-xs-3"><img class="pull-right" src="<%= schedule.awayLogo %>" alt="<%= schedule.away %>"></span>
         </div>
         <div class="panel-footer fix">
           <span><%= schedule.venue %></span>

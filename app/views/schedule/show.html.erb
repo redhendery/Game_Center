@@ -1,1 +1,40 @@
-<h1>Hello there</h1>
+<div class="container-fluid">
+  <div class="row text-center">
+    NZIHL Season <%= @schedule.leagueGame %>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">
+      <img class="pull-right" src="<%= @schedule.homeLogoLarge %>" alt="<%= @schedule.home %>">
+    </div>
+    <div class="col-xs-6">
+    <h3 class="text-center"><%= @schedule.home %> v <%= @schedule.away %></h3>
+      <div class="col-xs-6">
+        <h5 class="pull-left">Home Lineup:</h5>
+      </br>
+      </br>
+        <table class="table-condensed">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Position</th>
+            </tr>
+          </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+      <div class="col-xs-6">
+        <h5 class="pull-right">Away Lineup:</h5>
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <img class="pull-left" src="<%= @schedule.awayLogoLarge %>" alt="<%= @schedule.away %>">
+    </div>
+  </div>
+</div>

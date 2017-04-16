@@ -41,10 +41,12 @@ ActiveRecord::Schema.define(version: 20170415045244) do
     t.string   "venue"
     t.string   "prettyDate"
     t.string   "homeLogo"
+    t.string   "homeLogoLarge"
     t.string   "awayLogo"
+    t.string   "awayLogoLarge"
     t.date     "date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "stats", force: :cascade do |t|
