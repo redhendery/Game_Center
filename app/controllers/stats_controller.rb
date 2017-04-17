@@ -14,9 +14,9 @@ class StatsController < ApplicationController
     @player_skaters_plusMinus = Player.where(position: ['Forward', 'Defence']).order(plusMinus: :desc)
 
     # Goaltender sort methods
-    @player_gk = Player.where(position: 'GK')
-    @player_gk_gaa = Player.where(position: 'GK').order(:gaa)
-    @player_gk_svs = Player.where(position: 'GK').order(svs: :desc)
+    @player_gk = Player.where(position: 'Goalie')
+    @player_gk_gaa = Player.where(position: 'Goalie').order(:gaa)
+    @player_gk_svs = Player.where(position: 'Goalie').order(svs: :desc)
   end
 
   # GET /players/1
@@ -27,37 +27,37 @@ class StatsController < ApplicationController
 
   def all
     @skaters = Player.where(position: ['Forward', 'Defence'])
-    @gk = Player.where(position: 'GK')
+    @gk = Player.where(position: 'Goalie')
   end
 
   def swarm
     @swarm = Player.where(team: 'Botany Swarm')
     @swarm_skaters = Player.where(team: 'Botany Swarm').where(position: ['Forward', 'Defence'])
-    @swarm_gk = Player.where(team: 'Botany Swarm').where(position: 'GK')
+    @swarm_gk = Player.where(team: 'Botany Swarm').where(position: 'Goalie')
   end
 
   def reddevils
     @reddevils = Player.where(team: 'Canterbury Red Devils')
     @reddevils_skaters = Player.where(team: 'Canterbury Red Devils').where(position: ['Forward', 'Defence'])
-    @reddevils_gk = Player.where(team: 'Canterbury Red Devils').where(position: 'GK')
+    @reddevils_gk = Player.where(team: 'Canterbury Red Devils').where(position: 'Goalie')
   end
 
   def thunder
     @thunder = Player.where(team: 'Dunedin Thunder')
     @thunder_skaters = Player.where(team: 'Dunedin Thunder').where(position: ['Forward', 'Defence'])
-    @thunder_gk = Player.where(team: 'Dunedin Thunder').where(position: 'GK')
+    @thunder_gk = Player.where(team: 'Dunedin Thunder').where(position: 'Goalie')
   end
 
   def stampede
     @stampede = Player.where(team: 'Skycity Stampede')
     @stampede_skaters = Player.where(team: 'Skycity Stampede').where(position: ['Forward', 'Defence'])
-    @stampede_gk = Player.where(team: 'Skycity Stampede').where(position: 'GK')
+    @stampede_gk = Player.where(team: 'Skycity Stampede').where(position: 'Goalie')
   end
 
   def admirals
     @admirals = Player.where(team: 'West Auckland Admirals')
     @admirals_skaters = Player.where(team: 'West Auckland Admirals').where(position: ['Forward', 'Defence'])
-    @admirals_gk = Player.where(team: 'West Auckland Admirals').where(position: 'GK')
+    @admirals_gk = Player.where(team: 'West Auckland Admirals').where(position: 'Goalie')
   end
 
   # GET /players/new

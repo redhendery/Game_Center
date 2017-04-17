@@ -1,18 +1,18 @@
 <div class="table-responsive">
-  <table class="table table-bordered">
+  <table class="table table-condensed table-bordered">
     <thead>
       <tr>
-        <th>#</th>
+        <th class="text-center">#</th>
         <th>Name</th>
-        <th>Position</th>
+        <th class="text-center">Pos</th>
       </tr>
     </thead>
     <tbody>
       <% @away_lineup.each do |away| %>
         <tr>
-          <td><%= away.number %></td>
+          <td class="text-center"><%= away.number %></td>
           <td><%= away.name %></td>
-          <td><%= away.position %></td>
+          <td class="text-center"><%= away.posAbr %></td>
         </tr>
       <% end %>
     </tbody>

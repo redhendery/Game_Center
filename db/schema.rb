@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20170415045244) do
     t.string   "shoots"
     t.string   "catches"
     t.string   "position"
+    t.string   "posAbr"
     t.string   "abr"
     t.integer  "number"
     t.integer  "gp"
