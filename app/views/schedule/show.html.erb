@@ -1,1 +1,21 @@
-<h1>Hello there</h1>
+<div class="container-fluid">
+  <h5 class="text-center">NZIHL Season <%= @schedule.leagueGame %></h5>
+  <div class="row">
+    <div class="col-xs-3">
+      <%= render 'schedule/partials/game/home/home' %>
+    </div>
+    <div class="col-xs-6">
+    <h3 class="text-center"><%= @schedule.home %> v <%= @schedule.away %></h3>
+    </br>
+      <div class="col-xs-6">
+        <%= render 'schedule/partials/game/home/home_lineup' %>
+      </div>
+      <div class="col-xs-6">
+        <%= render 'schedule/partials/game/away/away_lineup' %>
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <%= render 'schedule/partials/game/away/away' %>
+    </div>
+  </div>
+</div>

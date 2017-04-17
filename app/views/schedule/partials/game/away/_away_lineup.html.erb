@@ -1,0 +1,20 @@
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Position</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @away_lineup.each do |away| %>
+        <tr>
+          <td><%= away.number %></td>
+          <td><%= away.name %></td>
+          <td><%= away.position %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
