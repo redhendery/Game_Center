@@ -16,5 +16,10 @@ class CreateSchedules < ActiveRecord::Migration[5.0]
 
       t.timestamps
     end
+
+    create_table :player_schedule do |t|
+      t.belongs_to :player, index: true
+      t.belongs_to :schedule, index: true
+    end
   end
 end

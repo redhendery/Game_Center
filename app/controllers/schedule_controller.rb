@@ -5,8 +5,18 @@ class ScheduleController < ApplicationController
   end
 
   def show
-    console
     @schedule = Schedule.find(params[:id])
+    @home_lineup = Player.where(team: @schedule.home)
+    @home_points = Player.where(team: @schedule.home).order(points: :desc)
+    @home_goals = Player.where(team: @schedule.home).order(goals: :desc)
+    @home_assists = Player.where(team: @schedule.home).order(assists: :desc)
+    @home_gaa = Player.where(team: @schedule.home).where(position: 'GK').order(gaa: :asc)
+
+    @away_lineup = Player.where(team: @schedule.away)
+    @away_points = Player.where(team: @schedule.away).order(points: :desc)
+    @away_goals = Player.where(team: @schedule.away).order(goals: :desc)
+    @away_assists = Player.where(team: @schedule.away).order(assists: :desc)
+    @away_gaa = Player.where(team: @schedule.away).where(position: 'GK').order(gaa: :asc)
   end
 
   def swarm

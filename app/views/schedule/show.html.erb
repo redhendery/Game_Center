@@ -1,40 +1,21 @@
 <div class="container-fluid">
-  <div class="row text-center">
-    NZIHL Season <%= @schedule.leagueGame %>
-  </div>
+  <h5 class="text-center">NZIHL Season <%= @schedule.leagueGame %></h5>
   <div class="row">
     <div class="col-xs-3">
-      <img class="pull-right" src="<%= @schedule.homeLogoLarge %>" alt="<%= @schedule.home %>">
+      <%= render 'schedule/partials/game/home/home' %>
     </div>
     <div class="col-xs-6">
     <h3 class="text-center"><%= @schedule.home %> v <%= @schedule.away %></h3>
+    </br>
       <div class="col-xs-6">
-        <h5 class="pull-left">Home Lineup:</h5>
-      </br>
-      </br>
-        <table class="table-condensed">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Name</th>
-              <th>Position</th>
-            </tr>
-          </thead>
-        <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-        </table>
+        <%= render 'schedule/partials/game/home/home_lineup' %>
       </div>
       <div class="col-xs-6">
-        <h5 class="pull-right">Away Lineup:</h5>
+        <%= render 'schedule/partials/game/away/away_lineup' %>
       </div>
     </div>
     <div class="col-xs-3">
-      <img class="pull-left" src="<%= @schedule.awayLogoLarge %>" alt="<%= @schedule.away %>">
+      <%= render 'schedule/partials/game/away/away' %>
     </div>
   </div>
 </div>

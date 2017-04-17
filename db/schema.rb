@@ -12,6 +12,13 @@
 
 ActiveRecord::Schema.define(version: 20170415045244) do
 
+  create_table "player_schedule", force: :cascade do |t|
+    t.integer "player_id"
+    t.integer "schedule_id"
+    t.index ["player_id"], name: "index_player_schedule_on_player_id"
+    t.index ["schedule_id"], name: "index_player_schedule_on_schedule_id"
+  end
+
   create_table "players", force: :cascade do |t|
     t.string   "name"
     t.string   "team"
