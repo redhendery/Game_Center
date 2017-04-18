@@ -1,0 +1,32 @@
+<table id="forwards" class="table table-striped" cellspacing="0" width="100%">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Player</th>
+      <th>Team</th>
+      <th>Position</th>
+      <th>GP</th>
+      <th>G</th>
+      <th>A</th>
+      <th>P</th>
+      <th>+/-</th>
+      <th>PIM</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @forwards.each do |f| %>
+      <tr>
+        <td></td>
+        <td><%= f.name %></td>
+        <td><%= f.abr %></td>
+        <td><%= f.position %></td>
+        <td><%= f.gp %></td>
+        <td><%= f.goals %></td>
+        <td><%= f.assists %></td>
+        <td><%= f.points %></td>
+        <td><%= f.plusMinus %></td>
+        <td><%= f.pim %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

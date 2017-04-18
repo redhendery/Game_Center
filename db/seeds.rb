@@ -529,8 +529,11 @@ schedules = Schedule.create([{
 
 p "created #{Schedule.count} games"
 
-# Start Player Seeds & West Auckland Admirals
+# Start Player Seeds
 players = Player.create([{
+	# Start West Auckland Admirals
+
+	# Start West Auckland Admirals Forwards
   "name": "Jake Ratcliffe",
   "team": "West Auckland Admirals",
   "shoots": "Right",
@@ -559,6 +562,162 @@ players = Player.create([{
   "plusMinus": 11,
 	"abr": "WAA"
 }, {
+  "name": "Tom Tracy",
+  "team": "West Auckland Admirals",
+  "shoots": "Right",
+  "position": "Forward",
+	"posAbr": "F",
+  "number": 77,
+  "gp": 5,
+  "goals": 3,
+  "assists": 6,
+  "points": 9,
+  "pim": 2,
+  "plusMinus": 3,
+	"abr": "WAA"
+}, {
+  "name": "Zac Vince",
+  "team": "West Auckland Admirals",
+  "shoots": "Left",
+  "position": "Forward",
+	"posAbr": "F",
+  "number": 40,
+  "gp": 3,
+  "goals": 0,
+  "assists": 0,
+  "points": 0,
+  "pim": 0,
+  "plusMinus": 1,
+	"abr": "WAA"
+}, {
+  "name": "Ollie Curtis",
+  "team": "West Auckland Admirals",
+  "shoots": "Right",
+  "position": "Forward",
+	"posAbr": "F",
+  "number": 6,
+  "gp": 12,
+  "goals": 0,
+  "assists": 0,
+  "points": 0,
+  "pim": 0,
+  "plusMinus": -2,
+	"abr": "WAA"
+}, {
+  "name": "Max Vesper",
+  "team": "West Auckland Admirals",
+  "shoots": "Right",
+  "position": "Forward",
+	"posAbr": "F",
+  "number": 13,
+  "gp": 15,
+  "goals": 4,
+  "assists": 20,
+  "points": 24,
+  "pim": 16,
+  "plusMinus": 11,
+	"abr": "WAA"
+}, {
+  "name": "Steve Huish",
+  "team": "West Auckland Admirals",
+  "shoots": "Right",
+  "position": "Forward",
+	"posAbr": "F",
+  "number": 7,
+  "gp": 15,
+  "goals": 2,
+  "assists": 5,
+  "points": 7,
+  "pim": 4,
+  "plusMinus": -1,
+	"abr": "WAA"
+}, {
+  "name": "Dylan Dickson",
+  "team": "West Auckland Admirals",
+  "shoots": "Right",
+  "position": "Forward",
+	"posAbr": "F",
+  "number": 16,
+  "gp": 15,
+  "goals": 4,
+  "assists": 6,
+  "points": 10,
+  "pim": 2,
+  "plusMinus": -2,
+	"abr": "WAA"
+}, {
+  "name": "Taylor Rooney",
+  "team": "West Auckland Admirals",
+  "shoots": "Right",
+  "position": "Forward",
+	"posAbr": "F",
+  "number": 35,
+  "gp": 15,
+  "goals": 1,
+  "assists": 5,
+  "points": 6,
+  "pim": 10,
+  "plusMinus": -1,
+	"abr": "WAA"
+}, {
+  "name": "Nick Henderson",
+  "team": "West Auckland Admirals",
+  "shoots": "Right",
+  "position": "Forward",
+	"posAbr": "F",
+  "number": 27,
+  "gp": 14,
+  "goals": 9,
+  "assists": 13,
+  "points": 22,
+  "pim": 16,
+  "plusMinus": 9,
+	"abr": "WAA"
+}, {
+  "name": "Sam Pillidge",
+  "team": "West Auckland Admirals",
+  "shoots": "Right",
+  "position": "Forward",
+	"posAbr": "F",
+  "number": 18,
+  "gp": 8,
+  "goals": 1,
+  "assists": 1,
+  "points": 2,
+  "pim": 0,
+  "plusMinus": 0,
+	"abr": "WAA"
+}, {
+  "name": "Josh Rawiri",
+  "team": "West Auckland Admirals",
+  "shoots": "Left",
+  "position": "Forward",
+	"posAbr": "F",
+  "number": 25,
+  "gp": 6,
+  "goals": 0,
+  "assists": 0,
+  "points": 0,
+  "pim": 0,
+  "plusMinus": -8,
+	"abr": "WAA"
+}, {
+  "name": "Mark Rawiri",
+  "team": "West Auckland Admirals",
+  "shoots": "Right",
+  "position": "Forward",
+	"posAbr": "F",
+  "number": 28,
+  "gp": 11,
+  "goals": 0,
+  "assists": 0,
+  "points": 0,
+  "pim": 0,
+  "plusMinus": -1,
+	"abr": "WAA"
+},
+# Start West Auckland Admirals Defence
+{
   "name": "Justin Daigle",
   "team": "West Auckland Admirals",
   "shoots": "Left",
@@ -586,8 +745,104 @@ players = Player.create([{
   "pim": 18,
   "plusMinus": 9,
 	"abr": "WAA"
+}, {
+  "name": "Gareth McLeish",
+  "team": "West Auckland Admirals",
+  "shoots": "Right",
+  "position": "Defence",
+	"posAbr": "D",
+  "number": 14,
+  "gp": 15,
+  "goals": 0,
+  "assists": 6,
+  "points": 6,
+  "pim": 4,
+  "plusMinus": -9,
+	"abr": "WAA"
+}, {
+  "name": "Eric Chung",
+  "team": "West Auckland Admirals",
+  "shoots": "Right",
+  "position": "Defence",
+	"posAbr": "D",
+  "number": 10,
+  "gp": 6,
+  "goals": 0,
+  "assists": 1,
+  "points": 1,
+  "pim": 0,
+  "plusMinus": 1,
+	"abr": "WAA"
+}, {
+  "name": "Nick Craig",
+  "team": "West Auckland Admirals",
+  "shoots": "Right",
+  "position": "Defence",
+	"posAbr": "D",
+  "number": 3,
+  "gp": 15,
+  "goals": 1,
+  "assists": 8,
+  "points": 9,
+  "pim": 8,
+  "plusMinus": -1,
+	"abr": "WAA"
+}, {
+  "name": "Jono Pol",
+  "team": "West Auckland Admirals",
+  "shoots": "Right",
+  "position": "Defence",
+	"posAbr": "D",
+  "number": 34,
+  "gp": 7,
+  "goals": 0,
+  "assists": 0,
+  "points": 0,
+  "pim": 8,
+  "plusMinus": -9,
+	"abr": "WAA"
+}, {
+  "name": "Mat Roxborough",
+  "team": "West Auckland Admirals",
+  "shoots": "Left",
+  "position": "Defence",
+	"posAbr": "D",
+  "number": 22,
+  "gp": 10,
+  "goals": 0,
+  "assists": 0,
+  "points": 0,
+  "pim": 18,
+  "plusMinus": -4,
+	"abr": "WAA"
+},
+# Start West Auckland Admirals Goaltenders
+{
+	"name": "Rick Parry",
+	"team": "West Auckland Admirals",
+	"catches": "Left",
+	"position": "Goalie",
+	"posAbr": "GK",
+	"number": 54,
+	"gp": 9,
+	"gaa": 4.23,
+	"svs": 882,
+	"abr": "WAA"
+}, {
+	"name": "Csaba Kersco-Margos Jnr.",
+	"team": "West Auckland Admirals",
+	"catches": "Left",
+	"position": "Goalie",
+	"posAbr": "GK",
+	"number": 34,
+	"gp": 9,
+	"gaa": 3.96,
+	"svs": 893,
+	"abr": "WAA"
 },
 # Start Canterbury Red Devils
+
+# Start Canterbury Red Devils Forwards
 {
 	"name": "Chris Eaden",
 	"team": "Canterbury Red Devils",
@@ -770,7 +1025,9 @@ players = Player.create([{
 	"pim": 0,
 	"plusMinus": 0,
 	"abr": "CRD"
-}, {
+},
+# Start Canterbury Red Devils Defence
+{
 	"name": "Moses Bygate-Smith",
 	"team": "Canterbury Red Devils",
 	"shoots": "Right",
@@ -854,7 +1111,9 @@ players = Player.create([{
 	"pim": 0,
 	"plusMinus": 0,
 	"abr": "CRD"
-}, {
+},
+# Start Canterbury Red Devils Goaltenders
+{
 	"name": "Michael Coleman",
 	"team": "Canterbury Red Devils",
 	"catches": "Left",
@@ -889,6 +1148,8 @@ players = Player.create([{
 	"abr": "CRD"
 },
 # Start Skycity Stampede
+
+# Start Skycity Stampede Forwards
 {
 	"name": "Matt Schneider",
 	"team": "Skycity Stampede",
@@ -902,6 +1163,34 @@ players = Player.create([{
 	"points": 23,
 	"pim": 2,
 	"plusMinus": 12,
+	"abr": "STP"
+}, {
+	"name": "Luke Pickering",
+	"team": "Skycity Stampede",
+	"shoots": "Right",
+	"position": "Forward",
+	"posAbr": "F",
+	"number": 6,
+	"gp": 16,
+	"goals": 2,
+	"assists": 2,
+	"points": 4,
+	"pim": 10,
+	"plusMinus": 5,
+	"abr": "STP"
+}, {
+	"name": "Cameron White",
+	"team": "Skycity Stampede",
+	"shoots": "Right",
+	"position": "Forward",
+	"posAbr": "F",
+	"number": 7,
+	"gp": 13,
+	"goals": 1,
+	"assists": 0,
+	"points": 1,
+	"pim": 4,
+	"plusMinus": -3,
 	"abr": "STP"
 }, {
 	"name": "Braden Lee",
@@ -918,6 +1207,120 @@ players = Player.create([{
 	"plusMinus": 10,
 	"abr": "STP"
 }, {
+	"name": "Mike McRae",
+	"team": "Skycity Stampede",
+	"shoots": "Right",
+	"position": "Forward",
+	"posAbr": "F",
+	"number": 13,
+	"gp": 16,
+	"goals": 12,
+	"assists": 25,
+	"points": 37,
+	"pim": 24,
+	"plusMinus": 28,
+	"abr": "STP"
+}, {
+	"name": "Callum Burns",
+	"team": "Skycity Stampede",
+	"shoots": "Right",
+	"position": "Forward",
+	"posAbr": "F",
+	"number": 14,
+	"gp": 16,
+	"goals": 6,
+	"assists": 5,
+	"points": 11,
+	"pim": 12,
+	"plusMinus": 11,
+	"abr": "STP"
+}, {
+	"name": "Harrison Macharg",
+	"team": "Skycity Stampede",
+	"shoots": "Right",
+	"position": "Forward",
+	"posAbr": "F",
+	"number": 17,
+	"gp": 8,
+	"goals": 3,
+	"assists": 3,
+	"points": 6,
+	"pim": 27,
+	"plusMinus": 9,
+	"abr": "STP"
+}, {
+	"name": "Stefan King",
+	"team": "Skycity Stampede",
+	"shoots": "Right",
+	"position": "Forward",
+	"posAbr": "F",
+	"number": 19,
+	"gp": 2,
+	"goals": 0,
+	"assists": 0,
+	"points": 0,
+	"pim": 0,
+	"plusMinus": 0,
+	"abr": "STP"
+}, {
+	"name": "Taylor Stewart",
+	"team": "Skycity Stampede",
+	"shoots": "Left",
+	"position": "Forward",
+	"posAbr": "F",
+	"number": 21,
+	"gp": 7,
+	"goals": 0,
+	"assists": 0,
+	"points": 0,
+	"pim": 0,
+	"plusMinus": 0,
+	"abr": "STP"
+}, {
+	"name": "Max Macharg",
+	"team": "Skycity Stampede",
+	"shoots": "Right",
+	"position": "Forward",
+	"posAbr": "F",
+	"number": 25,
+	"gp": 6,
+	"goals": 2,
+	"assists": 1,
+	"points": 3,
+	"pim": 37,
+	"plusMinus": 5,
+	"abr": "STP"
+}, {
+	"name": "Bryn Murray",
+	"team": "Skycity Stampede",
+	"shoots": "Right",
+	"position": "Forward",
+	"posAbr": "F",
+	"number": 27,
+	"gp": 11,
+	"goals": 0,
+	"assists": 0,
+	"points": 0,
+	"pim": 0,
+	"plusMinus": -1,
+	"abr": "STP"
+}, {
+	"name": "Ryan Strayer",
+	"team": "Skycity Stampede",
+	"shoots": "Left",
+	"position": "Forward",
+	"posAbr": "F",
+	"number": 56,
+	"gp": 5,
+	"goals": 0,
+	"assists": 3,
+	"points": 3,
+	"pim": 0,
+	"plusMinus": 3,
+	"abr": "STP"
+},
+# Start Skycity Stampede Defence
+{
 	"name": "Bert Haines",
 	"team": "Skycity Stampede",
 	"shoots": "Left",
@@ -930,6 +1333,76 @@ players = Player.create([{
 	"points": 3,
 	"pim": 30,
 	"plusMinus": 0,
+	"abr": "STP"
+}, {
+	"name": "Stefan Helmersson",
+	"team": "Skycity Stampede",
+	"shoots": "Left",
+	"position": "Defence",
+	"posAbr": "D",
+	"number": 3,
+	"gp": 16,
+	"goals": 3,
+	"assists": 8,
+	"points": 11,
+	"pim": 12,
+	"plusMinus": 13,
+	"abr": "STP"
+}, {
+	"name": "Cameron Trew",
+	"team": "Skycity Stampede",
+	"shoots": "Right",
+	"position": "Defence",
+	"posAbr": "D",
+	"number": 8,
+	"gp": 16,
+	"goals": 1,
+	"assists": 1,
+	"points": 2,
+	"pim": 22,
+	"plusMinus": 17,
+	"abr": "STP"
+}, {
+	"name": "Cameron Frear",
+	"team": "Skycity Stampede",
+	"shoots": "Right",
+	"position": "Defence",
+	"posAbr": "D",
+	"number": 9,
+	"gp": 16,
+	"goals": 0,
+	"assists": 1,
+	"points": 1,
+	"pim": 12,
+	"plusMinus": 6,
+	"abr": "STP"
+}, {
+	"name": "Ben Harford",
+	"team": "Skycity Stampede",
+	"shoots": "Right",
+	"position": "Defence",
+	"posAbr": "D",
+	"number": 11,
+	"gp": 16,
+	"goals": 0,
+	"assists": 3,
+	"points": 3,
+	"pim": 6,
+	"plusMinus": -1,
+	"abr": "STP"
+}, {
+	"name": "Mitchell Frear",
+	"team": "Skycity Stampede",
+	"shoots": "Right",
+	"position": "Defence",
+	"posAbr": "D",
+	"number": 16,
+	"gp": 16,
+	"goals": 1,
+	"assists": 12,
+	"points": 13,
+	"pim": 4,
+	"plusMinus": 14,
 	"abr": "STP"
 }, {
 	"name": "Hayden Argyle",
@@ -945,8 +1418,45 @@ players = Player.create([{
 	"pim": 49,
 	"plusMinus": 9,
 	"abr": "STP"
+}, {
+	"name": "Ben Miller",
+	"team": "Skycity Stampede",
+	"shoots": "Right",
+	"position": "Defence",
+	"posAbr": "D",
+	"number": 31,
+	"gp": 8,
+	"goals": 0,
+	"assists": 0,
+	"points": 0,
+	"pim": 0,
+	"plusMinus": -1,
+	"abr": "STP"
 },
-
+# Start Skycity Stampede Goaltenders
+{
+	"name": "Aston Brookes",
+	"team": "Skycity Stampede",
+	"catches": "Left",
+	"position": "Goalie",
+	"posAbr": "GK",
+	"number": 39,
+	"gp": 7,
+	"gaa": 1.55,
+	"svs": 944,
+	"abr": "STP"
+}, {
+	"name": "Matt Swirtz",
+	"team": "Skycity Stampede",
+	"catches": "Left",
+	"position": "Goalie",
+	"posAbr": "GK",
+	"number": 1,
+	"gp": 1,
+	"gaa": 6.00,
+	"svs": 854,
+	"abr": "STP"
+},
 # Start Botany Swarm
 
 # Start Swarm Forwards

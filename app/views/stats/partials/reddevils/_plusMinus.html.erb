@@ -4,11 +4,10 @@
     <div class="col-xs-4"><h5 class="list-group-item-heading pull-right more"><%= link_to 'More >>', stats_all_path %></h5></div>
   </div>
   <div class="panel-body leaders">
-    <% @player_skaters_plusMinus.limit(5).each_with_index do |player, i| %>
+    <% @reddevils_plusMinus.limit(5).each_with_index do |player, i| %>
       <div class="table-responsive">
         <span><strong><%= i += 1 %>. </strong></span>
         <span><strong><%= player.name %></strong></span>
-        <span><small><%= player.abr %></small></span>
         <span class="pull-right"><strong><%= player.plusMinus %></strong></span>
       </div>
     <% end %>

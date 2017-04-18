@@ -1,0 +1,30 @@
+<table id="swarm" class="table table-striped" cellspacing="0" width="100%">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th>Position</th>
+      <th>GP</th>
+      <th>G</th>
+      <th>A</th>
+      <th>P</th>
+      <th>PIM</th>
+      <th>+/-</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @swarm_skaters.each do |skater| %>
+      <tr>
+        <td></td>
+        <td><%= skater.name %></td>
+        <td><%= skater.position %></td>
+        <td><%= skater.gp %></td>
+        <td><%= skater.goals %></td>
+        <td><%= skater.assists %></td>
+        <td><%= skater.points %></td>
+        <td><%= skater.pim %></td>
+        <td><%= skater.plusMinus %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

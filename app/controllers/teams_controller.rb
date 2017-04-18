@@ -19,7 +19,7 @@ class TeamsController < ApplicationController
     @swarm_skaters_points = Player.where(team: 'Botany Swarm').where(position: ['Forward', 'Defence']).order(points: :desc)
     @swarm_skaters_goals = Player.where(team: 'Botany Swarm').where(position: ['Forward', 'Defence']).order(goals: :desc)
     @swarm_skaters_assists = Player.where(team: 'Botany Swarm').where(position: ['Forward', 'Defence']).order(assists: :desc)
-    @swarm_gk = Player.where(team: 'Botany Swarm').where(position: 'GK').order(svs: :desc)
+    @swarm_gk = Player.where(team: 'Botany Swarm').where(position: 'Goalie').order(svs: :desc)
   end
 
   def reddevils
@@ -30,7 +30,7 @@ class TeamsController < ApplicationController
     @reddevils_skaters_points = Player.where(team: 'Canterbury Red Devils').where(position: ['Forward', 'Defence']).order(points: :desc)
     @reddevils_skaters_goals = Player.where(team: 'Canterbury Red Devils').where(position: ['Forward', 'Defence']).order(goals: :desc)
     @reddevils_skaters_assists = Player.where(team: 'Canterbury Red Devils').where(position: ['Forward', 'Defence']).order(assists: :desc)
-    @reddevils_gk = Player.where(team: 'Canterbury Red Devils').where(position: 'GK').order(svs: :desc)
+    @reddevils_gk = Player.where(team: 'Canterbury Red Devils').where(position: 'Goalie').order(svs: :desc)
   end
 
   def thunder
@@ -41,7 +41,7 @@ class TeamsController < ApplicationController
     @thunder_skaters_points = Player.where(team: 'Dunedin Thunder').where(position: ['Forward', 'Defence']).order(points: :desc)
     @thunder_skaters_goals = Player.where(team: 'Dunedin Thunder').where(position: ['Forward', 'Defence']).order(goals: :desc)
     @thunder_skaters_assists = Player.where(team: 'Dunedin Thunder').where(position: ['Forward', 'Defence']).order(assists: :desc)
-    @thunder_gk = Player.where(team: 'Dunedin Thunder').where(position: 'GK').order(svs: :desc)
+    @thunder_gk = Player.where(team: 'Dunedin Thunder').where(position: 'Goalie').order(svs: :desc)
   end
 
   def stampede
@@ -52,7 +52,7 @@ class TeamsController < ApplicationController
     @stampede_skaters_points = Player.where(team: 'Skycity Stampede').where(position: ['Forward', 'Defence']).order(points: :desc)
     @stampede_skaters_goals = Player.where(team: 'Skycity Stampede').where(position: ['Forward', 'Defence']).order(goals: :desc)
     @stampede_skaters_assists = Player.where(team: 'Skycity Stampede').where(position: ['Forward', 'Defence']).order(assists: :desc)
-    @stampede_gk = Player.where(team: 'Skycity Stampede').where(position: 'GK').order(svs: :desc)
+    @stampede_gk = Player.where(team: 'Skycity Stampede').where(position: 'Goalie').order(svs: :desc)
   end
 
   def admirals
@@ -63,7 +63,7 @@ class TeamsController < ApplicationController
     @admirals_skaters_points = Player.where(team: 'West Auckland Admirals').where(position: ['Forward', 'Defence']).order(points: :desc)
     @admirals_skaters_goals = Player.where(team: 'West Auckland Admirals').where(position: ['Forward', 'Defence']).order(goals: :desc)
     @admirals_skaters_assists = Player.where(team: 'West Auckland Admirals').where(position: ['Forward', 'Defence']).order(assists: :desc)
-    @admirals_gk = Player.where(team: 'West Auckland Admirals').where(position: 'GK').order(svs: :desc)
+    @admirals_gk = Player.where(team: 'West Auckland Admirals').where(position: 'Goalie').order(svs: :desc)
   end
 
   # GET /teams/new

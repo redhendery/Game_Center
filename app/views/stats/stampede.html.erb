@@ -1,42 +1,28 @@
 <div class="container-fluid">
-  <div class="well">
-    <ul class="nav nav-pills nav-justified">
-      <li><%= link_to 'Leaders', stats_path %></li>
-      <li><%= link_to 'All', stats_all_path %></li>
-      <li><%= link_to 'Botany Swarm', stats_swarm_path %></li>
-      <li><%= link_to 'Canterbury Red Devils', stats_reddevils_path %></li>
-      <li><%= link_to 'Dunedin Thunder', stats_thunder_path %></li>
-      <li><%= link_to 'West Auckland Admirals', stats_admirals_path %></li>
-    </ul>
+  <%= render 'stats/partials/teams' %>
+  <%= render 'stats/partials/stampede/stat_types' %>
+  <div class="col-xs-8 headings"><h3>SKATING STATS</h3></div>
+  <div class="col-xs-4 headings"><h3>GOALTENDING STATS</h3></div>
+  <!-- Leading Skaters -->
+  <div class="col-xs-8">
+    <div class="col-xs-6">
+      <%= render 'stats/partials/stampede/points' %>
+    </div>
+    <div class="col-xs-6">
+      <%= render 'stats/partials/stampede/goals' %>
+    </div>
+    <div class="col-xs-6">
+      <%= render 'stats/partials/stampede/assists' %>
+    </div>
+    <div class="col-xs-6">
+      <%= render 'stats/partials/stampede/plusMinus' %>
+    </div>
   </div>
-  <table id="stampede" class="table table-striped" cellspacing="0" width="100%">
-    <thead>
-      <tr>
-        <th></th>
-        <th>Name</th>
-        <th>Position</th>
-        <th>GP</th>
-        <th>G</th>
-        <th>A</th>
-        <th>P</th>
-        <th>PIM</th>
-        <th>+/-</th>
-      </tr>
-    </thead>
-    <tbody>
-      <% @stampede_skaters.each do |skater| %>
-        <tr>
-          <td></td>
-          <td><%= skater.name %></td>
-          <td><%= skater.position %></td>
-          <td><%= skater.gp %></td>
-          <td><%= skater.goals %></td>
-          <td><%= skater.assists %></td>
-          <td><%= skater.points %></td>
-          <td><%= skater.pim %></td>
-          <td><%= skater.plusMinus %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
+  <!-- Leading GK's -->
+  <div class="col-xs-4">
+    <%= render 'stats/partials/stampede/gaa' %>
+  </div>
+  <div class="col-xs-4">
+    <%= render 'stats/partials/stampede/svs' %>
+  </div>
 </div>

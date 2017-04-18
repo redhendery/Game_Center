@@ -1,9 +1,6 @@
 <div class="panel panel-info">
   <div class="container-fluid panel-heading">
-    <div class="col-xs-8"><h4 class="list-group-item-heading heading">Goals</h4></div>
-    <div class="col-xs-4">
-      <h5 class="list-group-item-heading pull-right more"><%= link_to 'More >>', stats_all_path %></h5>
-    </div>
+    <h4 class="list-group-item-heading heading">Goal Leaders</h4>
   </div>
   <div class="panel-body leaders">
     <% @home_points.limit(3).each_with_index do |home, i| %>

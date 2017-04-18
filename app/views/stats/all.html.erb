@@ -1,46 +1,5 @@
 <div class="container-fluid">
-  <div class="well">
-    <ul class="nav nav-pills nav-justified">
-      <li><%= link_to 'Leaders', stats_path %></li>
-      <li><%= link_to 'Botany Swarm', stats_swarm_path %></li>
-      <li><%= link_to 'Canterbury Red Devils', stats_reddevils_path %></li>
-      <li><%= link_to 'Dunedin Thunder', stats_thunder_path %></li>
-      <li><%= link_to 'Skycity Stampede', stats_stampede_path %></li>
-      <li><%= link_to 'West Auckland Admirals', stats_admirals_path %></li>
-    </ul>
-  </div>
-  <div class="container">
-    <table id="all" class="table table-striped" cellspacing="0" width="100%">
-      <thead>
-        <tr>
-          <th></th>
-          <th>Player</th>
-          <th>Team</th>
-          <th>Position</th>
-          <th>GP</th>
-          <th>G</th>
-          <th>A</th>
-          <th>P</th>
-          <th>+/-</th>
-          <th>PIM</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @skaters.each do |skater| %>
-          <tr>
-            <td></td>
-            <td><%= skater.name %></td>
-            <td><%= skater.abr %></td>
-            <td><%= skater.position %></td>
-            <td><%= skater.gp %></td>
-            <td><%= skater.goals %></td>
-            <td><%= skater.assists %></td>
-            <td><%= skater.points %></td>
-            <td><%= skater.plusMinus %></td>
-            <td><%= skater.pim %></td>
-          </tr>
-        <% end %>
-      </tbody>
-    </table>
-  </div>
+  <%= render 'stats/partials/teams' %>
+  <%= render 'stats/partials/stat_types' %>
+  <%= render 'stats/partials/league/all' %>
 </div>

@@ -1,0 +1,26 @@
+<table id="stampede-goalies" class="table table-striped" cellspacing="0" width="100%">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Player</th>
+      <th>Team</th>
+      <th>Position</th>
+      <th>GP</th>
+      <th>GAA</th>
+      <th>SVS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @stampede_goaltenders.each_with_index do |gk, i| %>
+      <tr>
+        <td><%= i += 1 %></td>
+        <td><%= gk.name %></td>
+        <td><%= gk.abr %></td>
+        <td><%= gk.position %></td>
+        <td><%= gk.gp %></td>
+        <td><%= gk.gaa %></td>
+        <td>.<%= gk.svs %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

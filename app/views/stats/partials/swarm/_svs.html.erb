@@ -1,0 +1,15 @@
+<div class="panel panel-info">
+  <div class="container-fluid panel-heading">
+    <div class="col-xs-8"><h4 class="list-group-item-heading heading">Save Percentage</h4></div>
+    <div class="col-xs-4"><h5 class="list-group-item-heading pull-right more"><%= link_to 'More >>', stats_all_path %></h5></div>
+  </div>
+  <div class="panel-body leaders">
+    <% @swarm_svs.limit(5).each_with_index do |gk, i| %>
+      <div class="table-responsive">
+        <span><strong><%= i += 1 %>. </strong></span>
+        <span><strong><%= gk.name %></strong></span>
+        <span class="pull-right"><strong>.<%= gk.svs %></strong></span>
+      </div>
+    <% end %>
+  </div>
+</div>
